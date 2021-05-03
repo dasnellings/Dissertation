@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  3 MAY 2021 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  3 MAY 2021 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -646,9 +646,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./Abbreviations/listofabbr.aux) (./Acknowledgements/acknowledgements.aux)
 (./Chapters/Intro/introduction.aux) (./Chapters/HHT_TwoHit/hht.aux)
 (./Chapters/GNAQ/gnaq.aux) (./Chapters/CCM_MAP3K3/map3k3.aux)
-(./Chapters/CCM_PIK3CA/pik3ca.aux) (./Chapters/DVA/dva.aux)
-(./Chapters/Conclusion/conclusion.aux) (./Appendix1/probability.aux)
-(./Biography/biography.aux))
+(./Chapters/CCM_PIK3CA/pik3ca.aux) (./Chapters/Conclusion/conclusion.aux)
+(./Appendix1/probability.aux) (./Biography/biography.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
@@ -930,20 +929,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ] [8]
-\openout2 = `./Chapters/DVA/dva.aux'.
-
- (./Chapters/DVA/dva.tex
-Chapter 6.
-) [9
-
-
-
-]
 \openout2 = `./Chapters/Conclusion/conclusion.aux'.
 
  (./Chapters/Conclusion/conclusion.tex
-Chapter 7.
-) [10
+Chapter 6.
+) [9
 
 
 
@@ -952,7 +942,7 @@ Chapter 7.
 
  (./Appendix1/probability.tex
 Appendix A.
-) [11
+) [10
 
 
 
@@ -960,7 +950,7 @@ Appendix A.
 No file dissertation.bbl.
 \openout2 = `./Biography/biography.aux'.
 
-(./Biography/biography.tex) [12
+(./Biography/biography.tex) [11
 
 
 
@@ -972,20 +962,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
 (./Abbreviations/listofabbr.aux) (./Acknowledgements/acknowledgements.aux)
 (./Chapters/Intro/introduction.aux) (./Chapters/HHT_TwoHit/hht.aux)
 (./Chapters/GNAQ/gnaq.aux) (./Chapters/CCM_MAP3K3/map3k3.aux)
-(./Chapters/CCM_PIK3CA/pik3ca.aux) (./Chapters/DVA/dva.aux)
-(./Chapters/Conclusion/conclusion.aux) (./Appendix1/probability.aux)
-(./Biography/biography.aux))
+(./Chapters/CCM_PIK3CA/pik3ca.aux) (./Chapters/Conclusion/conclusion.aux)
+(./Appendix1/probability.aux) (./Biography/biography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 3C3A8017E41CB9AD1E60BA0A1D284719;7370.
+(rerunfilecheck)             Checksum: 34BE7F1B455456533BE1E9E9E6133554;7040.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 8655 strings out of 480608
- 130682 string characters out of 5903631
- 393389 words of memory out of 5000000
- 24126 multiletter control sequences out of 15000+600000
+ 8632 strings out of 480608
+ 130325 string characters out of 5903631
+ 392918 words of memory out of 5000000
+ 24117 multiletter control sequences out of 15000+600000
  554821 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,6n,36p,287b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1006,10 +995,10 @@ al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/loca
 l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/lo
 cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
 r/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on dissertation.pdf (25 pages, 179493 bytes).
+Output written on dissertation.pdf (24 pages, 178141 bytes).
 PDF statistics:
- 673 PDF objects out of 1000 (max. 8388607)
- 623 compressed objects within 7 object streams
- 137 named destinations out of 1000 (max. 500000)
- 689 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 641 PDF objects out of 1000 (max. 8388607)
+ 593 compressed objects within 6 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 649 words of extra memory for PDF output out of 10000 (max. 10000000)
 

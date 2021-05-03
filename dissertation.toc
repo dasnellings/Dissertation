@@ -88,15 +88,10 @@
 \contentsline {subsubsection}{Sequence Analysis}{8}{section*.22}%
 \contentsline {subsubsection}{Single-Nucleus DNA Sequencing}{8}{section*.23}%
 \contentsline {subsubsection}{Statistics}{8}{section*.24}%
-\contentsline {chapter}{\numberline {6}Developmental Venous Anomalies Predispose to Malformation}{9}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Premise}{9}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Results}{9}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Discussion}{9}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Methods}{9}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Conclusion}{10}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Model for HHT Pathogenesis}{10}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Model for CCM Pathogenesis}{10}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Contribution of Somatic Mutations to Non-Cancer Diseases}{10}{section.7.3}%
-\contentsline {chapter}{\numberline {A}Probability of Multiple Somatic Mutations}{11}{appendix.A}%
-\contentsline {chapter}{Biography}{12}{appendix*.25}%
-\contentsline {chapter}{Bibliography}{12}{appendix.A}%
+\contentsline {chapter}{\numberline {6}Conclusion}{9}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Model for HHT Pathogenesis}{9}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Model for CCM Pathogenesis}{9}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Contribution of Somatic Mutations to Non-Cancer Diseases}{9}{section.6.3}%
+\contentsline {chapter}{\numberline {A}Probability of Multiple Somatic Mutations}{10}{appendix.A}%
+\contentsline {chapter}{Biography}{11}{appendix*.25}%
+\contentsline {chapter}{Bibliography}{11}{appendix.A}%
