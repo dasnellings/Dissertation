@@ -63,6 +63,7 @@
 \contentsline {subsection}{\numberline {4.2.4}(Whole-Exome Results) (??? Merge with above ???)}{6}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}Discussion}{6}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}CCM Loss of Function and \italicize {MAP3K3} Gain of Function are Functionally Equivalent}{6}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Differing Constraints for Constitutional and Somatic Inheritance}{6}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Methods}{6}{section.4.4}%
 \contentsline {chapter}{\numberline {5}\italicize {PIK3CA} Mutations Fuel Cerebral Cavernous Malformation Growth}{7}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Premise}{8}{section.5.1}%
