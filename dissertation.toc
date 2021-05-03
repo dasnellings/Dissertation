@@ -1,8 +1,8 @@
 \contentsline {chapter}{Abstract}{iv}{chapter*.1}%
-\contentsline {chapter}{List of Tables}{ix}{chapter*.3}%
-\contentsline {chapter}{List of Figures}{x}{chapter*.4}%
-\contentsline {chapter}{List of Abbreviations and Symbols}{xi}{chapter*.5}%
-\contentsline {chapter}{Acknowledgements}{xii}{chapter*.8}%
+\contentsline {chapter}{List of Tables}{x}{chapter*.3}%
+\contentsline {chapter}{List of Figures}{xi}{chapter*.4}%
+\contentsline {chapter}{List of Abbreviations and Symbols}{xii}{chapter*.5}%
+\contentsline {chapter}{Acknowledgements}{xiii}{chapter*.8}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Vascular Malformations}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Common Genetic Mechanisms}{2}{subsection.1.1.1}%
@@ -21,33 +21,64 @@
 \contentsline {subsection}{\numberline {1.4.4}Signaling of the CCM Complex and its Downstream Effectors}{2}{subsection.1.4.4}%
 \contentsline {section}{\numberline {1.5}Infantile Hemangioma (??? Include Neg Data ???)}{2}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Two-Hit Mechanism of Hereditary Hemorrhagic Telangiectasia}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Features}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Limitations}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Class options}{5}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Mutant \italicize {GNAQ} Alleles Produce Distinct Disease Phenotypes}{8}{chapter.3}%
-\contentsline {chapter}{\numberline {4}\italicize {MAP3K3} Mutations Seed Cerebral Cavernous Malformations}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Intra-chapter divisions: Sections}{9}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Subsections: Wow! Italics!}{9}{subsection.4.1.1}%
-\contentsline {subsubsection}{Subsubsections: Smaller and smaller}{9}{section*.9}%
-\contentsline {paragraph}{Paragraphs}{10}{section*.10}%
-\contentsline {subparagraph}{Subparagraphs}{10}{section*.11}%
-\contentsline {section}{\numberline {4.2}Let's do some math}{10}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Table of Contents Behavior}{12}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Figures and footnotes}{12}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}List of Figures}{14}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Table example}{15}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Footnotes}{15}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Corner cases in formatting, such as very very very long section titles. Man, this goes on forever.}{16}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Figure and Table caption cases are neat, and this is an absurdly long subsection heading}{16}{subsection.4.6.1}%
-\contentsline {chapter}{\numberline {5}\italicize {PIK3CA} Mutations Fuel Cerebral Cavernous Malformation Growth}{18}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Lorem Ipsum}{18}{section.5.1}%
-\contentsline {section}{\numberline {5.2}More nonsense}{20}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Developmental Venous Anomalies Predispose to Malformation}{22}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Ea cum sanctus propriae forensibus, mea vidit iriure reprimique ut, ea nam agam kasd comprehensam Pro ei inani facilisi, labores detraxit ad cum}{23}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Ipsum}{24}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Conclusion}{26}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Model for HHT Pathogenesis}{26}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Model for CCM Pathogenesis}{26}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Contribution of Somatic Mutations to Non-Cancer Diseases}{26}{section.7.3}%
-\contentsline {chapter}{Biography}{27}{chapter*.12}%
-\contentsline {chapter}{Bibliography}{27}{section.7.3}%
+\contentsline {section}{\numberline {2.1}Premise}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Results}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Telangiectasia Harmor a Somatic Mutation in \italicize {ENG} or \italicize {ACVRL1}}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Somatic and Germline Mutations are Biallelic}{4}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Mutations are Consistent with Homozygous Loss of Function}{4}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Telangiectasia from the Same Individual Harbor Unique Somatic Mutations}{4}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Discussion}{4}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Evidence for a Genetic Two-Hit Mechanism}{4}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Sensitivity for Detecting Somatic Mutations}{4}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Necessary, but Not Sufficient}{4}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Extent of Lesional Mosaicism}{4}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Mutant Cell Metastasis}{4}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Two-Hit Mechanism for \italicize {SMAD4} \& JP-HHT}{4}{subsection.2.3.6}%
+\contentsline {section}{\numberline {2.4}Methods}{4}{section.2.4}%
+\contentsline {subsubsection}{Sample Collection}{4}{section*.9}%
+\contentsline {subsubsection}{DNA and RNA Extraction}{4}{section*.10}%
+\contentsline {subsubsection}{Targeted Sequencing}{4}{section*.11}%
+\contentsline {subsubsection}{Mutation Detection}{4}{section*.12}%
+\contentsline {subsubsection}{Establishing Phase}{4}{section*.13}%
+\contentsline {subsubsection}{\italicize {in vitro} Splicing}{4}{section*.14}%
+\contentsline {subsubsection}{Reverse-Transcription PCR}{4}{section*.15}%
+\contentsline {chapter}{\numberline {3}Mutant \italicize {GNAQ} Alleles Produce Distinct Disease Phenotypes}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Premise}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Results}{5}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Discussion}{5}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Methods}{5}{section.3.4}%
+\contentsline {chapter}{\numberline {4}\italicize {MAP3K3} Mutations Seed Cerebral Cavernous Malformations}{6}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Premise}{6}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Results}{6}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Discussion}{6}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Methods}{6}{section.4.4}%
+\contentsline {chapter}{\numberline {5}\italicize {PIK3CA} Mutations Fuel Cerebral Cavernous Malformation Growth}{7}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Premise}{8}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Results}{8}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}\italicize {PIK3CA} Mutations Occur in Familial and Sporadic CCMs}{8}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}CCMs Harbor Multiple Somatic Mutations in Different Genes}{8}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}\italicize {PIK3CA} and CCM/\italicize {MAP3K3} Mutations in the Same Cell}{8}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Developmental Venous Anomalies Predispose to Malformation}{8}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Discussion}{8}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Three-Hit Model of CCM Pathogenesis}{8}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Similarities to the Genetic Mechanism of Cancer}{8}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Role of Clonal Expansion in Mutagenesis}{8}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Therapeutic Implications}{8}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Distinct Properties of \italicize {PIK3CA} vs. CCM/\italicize {MAP3K3} Mutations}{8}{subsection.5.3.5}%
+\contentsline {section}{\numberline {5.4}Methods}{8}{section.5.4}%
+\contentsline {subsubsection}{CCM Collection}{8}{section*.16}%
+\contentsline {subsubsection}{Brain AVM Collection}{8}{section*.17}%
+\contentsline {subsubsection}{DNA Extraction}{8}{section*.18}%
+\contentsline {subsubsection}{Droplet Digital PCR}{8}{section*.19}%
+\contentsline {subsubsection}{SNaPshot}{8}{section*.20}%
+\contentsline {subsubsection}{Sequencing}{8}{section*.21}%
+\contentsline {subsubsection}{Sequence Analysis}{8}{section*.22}%
+\contentsline {subsubsection}{Single-Nucleus DNA Sequencing}{8}{section*.23}%
+\contentsline {subsubsection}{Statistics}{8}{section*.24}%
+\contentsline {chapter}{\numberline {6}Conclusion}{9}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Model for HHT Pathogenesis}{9}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Model for CCM Pathogenesis}{9}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Contribution of Somatic Mutations to Non-Cancer Diseases}{9}{section.6.3}%
+\contentsline {chapter}{\numberline {A}Probability of Multiple Somatic Mutations}{10}{appendix.A}%
+\contentsline {chapter}{Biography}{11}{appendix*.25}%
+\contentsline {chapter}{Bibliography}{11}{appendix.A}%

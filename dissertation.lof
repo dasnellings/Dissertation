@@ -2,8 +2,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Short caption for table of figures.}}{13}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The Duke logo again, but now with a really long rambling caption. This caption should be set single-spaced in the LoF and in the body text. What do you think about having graphics in the main directory of a project? I'd prefer them in a folder, then put 'foldername/picturename' as the argument to includegraphics.}}{17}{figure.4.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
