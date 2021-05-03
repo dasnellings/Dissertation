@@ -1,8 +1,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Short table caption appears only in List of Tables.}}{13}{table.3.1}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces The same silly table again, but with a really really really really really really really really really really really really really really really really really really really really really long caption.}}{15}{table.3.2}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Short table caption appears only in List of Tables.}}{15}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces The same silly table again, but with a really really really really really really really really really really really really really really really really really really really really really long caption.}}{17}{table.4.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

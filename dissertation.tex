@@ -39,6 +39,20 @@
 %Graphics Path to find your pictures
 \graphicspath{{./Pictures/}}
 
+%Italics sans serif to get rid of nasty curls in default italic numerals
+\usepackage{xparse}
+\ExplSyntaxOn
+\NewDocumentCommand \italicize { m }
+  { \nathdwek_italicize:n { #1 } }
+\cs_new_protected:Npn \nathdwek_italicize:n #1
+ {
+  \tl_set:Nn \l_tmpa_tl { #1 }
+  \tl_map_inline:nn { 0123456789 }
+   { \tl_replace_all:Nnn \l_tmpa_tl { ##1 } { \textsl { ##1 } } }
+  \textit { \tl_use:N \l_tmpa_tl }
+ }
+\ExplSyntaxOff
+
 
 %-----------------------------------------------------------------------------%
 % PREAMBLE 
@@ -118,19 +132,21 @@
 %
 %
 %-----------------------------------------------------------------------------%
-\include{{./Chapter1/introduction}}
-\include{{./Chapter2/chr2}} % A regular chapter, starts with '\chapter{Title}'
-\include{{./Chapter3/chr3}}
-\include{{./Chapter4/chr4}}
-\include{{./Chapter5/chr5}}
+\include{{./Chapters/Intro/introduction}}
+\include{{./Chapters/HHT_TwoHit/hht}} % A regular chapter, starts with '\chapter{Title}'
+\include{{./Chapters/GNAQ/gnaq}}
+\include{{./Chapters/CCM_MAP3K3/map3k3}}
+\include{{./Chapters/CCM_PIK3CA/pik3ca}}
+\include{{./Chapters/DVA/dva}}
+\include{{./Chapters/Conclusion/conclusion}}
 %==============================================================================
 
 %-----------------------------------------------------------------------------%
 % APPENDICES -- OPTIONAL. These are just chapters enumerated by Appendix A,
 %                Appendix B, Appendix C...
 %-----------------------------------------------------------------------------%
-\appendix
-\include{{./Appendix1/appendix1}} % Start with '\chapter{Title}'
+%\appendix
+%\include{{./Appendix1/appendix1}} % Start with '\chapter{Title}'
 %You can always add more appendices here if you want
 
 %-----------------------------------------------------------------------------%
