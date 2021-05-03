@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  3 MAY 2021 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  3 MAY 2021 12:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -640,7 +640,9 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 
 LaTeX Warning: Label `hello' multiply defined.
 
-) (./Chapter5/chr5.aux) (./Appendix1/chLorem3.aux) (./Biography/biography.aux))
+) (./Chapter5/chr5.aux)
+No file ./Appendix1/chLorem3.aux.
+(./Biography/biography.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
@@ -659,6 +661,7 @@ LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
+
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count278
@@ -834,9 +837,9 @@ Chapter 5.
 
 
 ] [21] [22]) [23]
-\openout2 = `./Appendix1/chLorem3.aux'.
+\openout2 = `./Appendix1/appendix1.aux'.
 
- (./Appendix1/chLorem3.tex
+ (./Appendix1/appendix1.tex
 Appendix A.
 [24
 
@@ -860,7 +863,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
 (./dissertation.aux (./Abstract/abstract.aux) (./Abbreviations/listofabbr.aux)
 (./Acknowledgements/acknowledgements.aux) (./Chapter1/introduction.aux)
 (./Chapter2/chr2.aux) (./Chapter3/chr3.aux) (./Chapter4/chr4.aux)
-(./Chapter5/chr5.aux) (./Appendix1/chLorem3.aux) (./Biography/biography.aux))
+(./Chapter5/chr5.aux) (./Appendix1/appendix1.aux) (./Biography/biography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
@@ -872,13 +875,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 8192 strings out of 480608
- 116824 string characters out of 5903631
- 379524 words of memory out of 5000000
+ 8191 strings out of 480608
+ 116793 string characters out of 5903631
+ 379052 words of memory out of 5000000
  23697 multiletter control sequences out of 15000+600000
  560532 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,18n,32p,586b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,18n,32p,587b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
