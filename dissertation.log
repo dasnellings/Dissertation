@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  3 MAY 2021 12:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  3 MAY 2021 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -636,13 +636,11 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 )
 (./dissertation.aux (./Abstract/abstract.aux) (./Abbreviations/listofabbr.aux)
 (./Acknowledgements/acknowledgements.aux) (./Chapter1/introduction.aux)
-(./Chapter2/guide-notes.aux) (./Chapter3/chRegularLook.aux)
-(./Chapter4/chLorem.aux
+(./Chapter2/chr2.aux) (./Chapter3/chr3.aux) (./Chapter4/chr4.aux
 
 LaTeX Warning: Label `hello' multiply defined.
 
-) (./Chapter5/chLorem2.aux) (./Appendix1/chLorem3.aux)
-(./Biography/biography.aux))
+) (./Chapter5/chr5.aux) (./Appendix1/chLorem3.aux) (./Biography/biography.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
@@ -661,7 +659,6 @@ LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
-
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count278
@@ -778,9 +775,9 @@ Chapter 1.
 
 
 ]
-\openout2 = `./Chapter2/guide-notes.aux'.
+\openout2 = `./Chapter2/chr2.aux'.
 
- (./Chapter2/guide-notes.tex
+ (./Chapter2/chr2.tex
 Chapter 2.
 [2
 
@@ -793,9 +790,9 @@ d nobind. \OT1/cmr/bx/n/12 Changed
  []
 
 [4] [5]) [6]
-\openout2 = `./Chapter3/chRegularLook.aux'.
+\openout2 = `./Chapter3/chr3.aux'.
 
- (./Chapter3/chRegularLook.tex
+ (./Chapter3/chr3.tex
 Chapter 3.
 [7
 
@@ -818,19 +815,19 @@ File: ./Pictures/dukeshield.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Pictures/dukeshield.pdf  used on input line 261.
 (pdftex.def)             Requested size: 87.19333pt x 108.405pt.
 ) [14] [15]
-\openout2 = `./Chapter4/chLorem.aux'.
+\openout2 = `./Chapter4/chr4.aux'.
 
 
-(./Chapter4/chLorem.tex
+(./Chapter4/chr4.tex
 Chapter 4.
 [16
 
 
 
 ] [17] [18]) [19]
-\openout2 = `./Chapter5/chLorem2.aux'.
+\openout2 = `./Chapter5/chr5.aux'.
 
- (./Chapter5/chLorem2.tex
+ (./Chapter5/chr5.tex
 Chapter 5.
 [20
 
@@ -862,9 +859,8 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
 (./dissertation.aux (./Abstract/abstract.aux) (./Abbreviations/listofabbr.aux)
 (./Acknowledgements/acknowledgements.aux) (./Chapter1/introduction.aux)
-(./Chapter2/guide-notes.aux) (./Chapter3/chRegularLook.aux)
-(./Chapter4/chLorem.aux) (./Chapter5/chLorem2.aux) (./Appendix1/chLorem3.aux)
-(./Biography/biography.aux))
+(./Chapter2/chr2.aux) (./Chapter3/chr3.aux) (./Chapter4/chr4.aux)
+(./Chapter5/chr5.aux) (./Appendix1/chLorem3.aux) (./Biography/biography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
@@ -877,7 +873,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
  8192 strings out of 480608
- 117077 string characters out of 5903631
+ 116824 string characters out of 5903631
  379524 words of memory out of 5000000
  23697 multiletter control sequences out of 15000+600000
  560532 words of font info for 121 fonts, out of 8000000 for 9000
