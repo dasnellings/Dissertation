@@ -1,8 +1,8 @@
 \contentsline {chapter}{Abstract}{iv}{chapter*.1}%
-\contentsline {chapter}{List of Tables}{x}{chapter*.3}%
-\contentsline {chapter}{List of Figures}{xi}{chapter*.4}%
-\contentsline {chapter}{List of Abbreviations and Symbols}{xii}{chapter*.5}%
-\contentsline {chapter}{Acknowledgements}{xiii}{chapter*.8}%
+\contentsline {chapter}{List of Tables}{xi}{chapter*.3}%
+\contentsline {chapter}{List of Figures}{xii}{chapter*.4}%
+\contentsline {chapter}{List of Abbreviations and Symbols}{xiii}{chapter*.5}%
+\contentsline {chapter}{Acknowledgements}{xiv}{chapter*.8}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Vascular Malformations}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Common Genetic Mechanisms}{2}{subsection.1.1.1}%
@@ -89,10 +89,38 @@
 \contentsline {subsubsection}{Sequence Analysis}{8}{section*.22}%
 \contentsline {subsubsection}{Single-Nucleus DNA Sequencing}{8}{section*.23}%
 \contentsline {subsubsection}{Statistics}{8}{section*.24}%
-\contentsline {chapter}{\numberline {6}Conclusion}{9}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Model for HHT Pathogenesis}{9}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Model for CCM Pathogenesis}{9}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Contribution of Somatic Mutations to Non-Cancer Diseases}{9}{section.6.3}%
-\contentsline {chapter}{\numberline {A}Probability of Multiple Somatic Mutations}{10}{appendix.A}%
-\contentsline {chapter}{Biography}{11}{appendix*.25}%
-\contentsline {chapter}{Bibliography}{11}{appendix.A}%
+\contentsline {chapter}{\numberline {6}Conclusions \& Musings}{9}{chapter.6}%
+\contentsline {section}{\numberline {6.1}HHT Pathogenesis}{10}{section.6.1}%
+\contentsline {section}{\numberline {6.2}CCM Pathogenesis}{10}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Developmental Venous Anomalies as a Primer for Disease}{10}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Association with Sporadic CCM}{10}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Association with Other Diseases}{10}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Cowden Syndrome}{10}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Implications}{10}{subsection.6.3.4}%
+\contentsline {section}{\numberline {6.4}Other Vascular Malformations}{10}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Classification of Vascular Malformations and Vascular Tumors}{10}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Unique Properties of Somatic Mutations in \italicize {GNAQ}}{10}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}The Curious Case of Infantile Hemangioma}{10}{subsection.6.4.3}%
+\contentsline {section}{\numberline {6.5}Genetic Mechanisms of Mendelian Disease}{10}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Phenotypic Dominance $\neq $ Genetic Dominance}{10}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Knudsons Fingerprint}{10}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}The Diverse Functional Effects of Genetic Mutations}{10}{subsection.6.5.3}%
+\contentsline {section}{\numberline {6.6}The Intersection of Somatic Mutagenesis and Evolution}{10}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}The Creation of New Alleles}{10}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}The Relationship Between Mutability and Fitness Landscape}{10}{subsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.6.3}Recurring Mutations \& Convergent Evolution}{10}{subsection.6.6.3}%
+\contentsline {subsection}{\numberline {6.6.4}Clonal Evolution of Somatic Mutants}{10}{subsection.6.6.4}%
+\contentsline {subsection}{\numberline {6.6.5}Cancer}{10}{subsection.6.6.5}%
+\contentsline {section}{\numberline {6.7}Somatic Mutations}{10}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}The Role of Somatic Mutations in Aging}{10}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Constitutional Intolerance \& Somatic Permissiveness}{10}{subsection.6.7.2}%
+\contentsline {subsection}{\numberline {6.7.3}Somatic Reversion of Pathogenic Mutations}{10}{subsection.6.7.3}%
+\contentsline {subsection}{\numberline {6.7.4}What is the Consequence of RNA Mutations?}{10}{subsection.6.7.4}%
+\contentsline {section}{\numberline {6.8}Innovation in the Sequencing Era}{10}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Detection of Somatic Mutations}{10}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}Single Cell Sequencing}{10}{subsection.6.8.2}%
+\contentsline {subsection}{\numberline {6.8.3}Data Democratization \& Individual Privacy}{10}{subsection.6.8.3}%
+\contentsline {subsection}{\numberline {6.8.4}Growing Importance of Informatics in Biology}{10}{subsection.6.8.4}%
+\contentsline {chapter}{\numberline {A}Probability of Multiple Somatic Mutations}{11}{appendix.A}%
+\contentsline {chapter}{Biography}{12}{appendix*.25}%
+\contentsline {chapter}{Bibliography}{12}{appendix.A}%
