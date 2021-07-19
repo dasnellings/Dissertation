@@ -1,0 +1,65 @@
+\begin{thebibliography}{6}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Garaci et~al.(2015)Garaci, Marsili, Riant, Marziali, Cecillon,
+  Pasquarelli, Sangiuolo, Floris, Novelli, Tournier-Lasserve, \&
+  Brancati}]{garaci2015}
+Garaci, F., Marsili, L., Riant, F., Marziali, S., Cecillon, M., Pasquarelli,
+  R., Sangiuolo, F., Floris, R., Novelli, G., Tournier-Lasserve, E., \&
+  Brancati, F. (2015).
+\newblock Cerebral cavernous malformations associated to meningioma: High
+  penetrance in a novel family mutated in the pdcd10 gene.
+\newblock {\em Neuroradiol J\/}, {\em 28\/}(3), 289--93.
+\newline\urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/26246098}
+
+\bibitem[{Labauge et~al.(2009)Labauge, Fontaine, Neau, Bergametti, Riant,
+  Blecon, Marchelli, Arnoult, Lannuzel, Clanet, Olschwang, Denier, \&
+  Tournier-Lasserve}]{labauge2009}
+Labauge, P., Fontaine, B., Neau, J.~P., Bergametti, F., Riant, F., Blecon, A.,
+  Marchelli, F., Arnoult, M., Lannuzel, A., Clanet, M., Olschwang, S., Denier,
+  C., \& Tournier-Lasserve, E. (2009).
+\newblock Multiple dural lesions mimicking meningiomas in patients with
+  ccm3/pdcd10 mutations.
+\newblock {\em Neurology\/}, {\em 72\/}(23), 2044--6.
+\newline\urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/19506228}
+
+\bibitem[{North et~al.(2000)North, Waner, Mizeracki, \& Mihm}]{north2000}
+North, P.~E., Waner, M., Mizeracki, A., \& Mihm, J., M.~C. (2000).
+\newblock Glut1: a newly discovered immunohistochemical marker for juvenile
+  hemangiomas.
+\newblock {\em Hum Pathol\/}, {\em 31\/}(1), 11--22.
+\newline\urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/10665907}
+
+\bibitem[{North et~al.(2001)North, Waner, Mizeracki, Mrak, Nicholas, Kincannon,
+  Suen, \& Mihm}]{north2001}
+North, P.~E., Waner, M., Mizeracki, A., Mrak, R.~E., Nicholas, R., Kincannon,
+  J., Suen, J.~Y., \& Mihm, J., M.~C. (2001).
+\newblock A unique microvascular phenotype shared by juvenile hemangiomas and
+  human placenta.
+\newblock {\em Arch Dermatol\/}, {\em 137\/}(5), 559--70.
+\newline\urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/11346333}
+
+\bibitem[{Pittman et~al.(2006)Pittman, Losken, Kleinman, Marcus, Blei, Gurtner,
+  \& Marchuk}]{pittman2006}
+Pittman, K.~M., Losken, H.~W., Kleinman, M.~E., Marcus, J.~R., Blei, F.,
+  Gurtner, G.~C., \& Marchuk, D.~A. (2006).
+\newblock No evidence for maternal-fetal microchimerism in infantile
+  hemangioma: a molecular genetic investigation.
+\newblock {\em J Invest Dermatol\/}, {\em 126\/}(11), 2533--8.
+\newline\urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/16902414}
+
+\bibitem[{Riant et~al.(2013)Riant, Bergametti, Fournier, Chapon,
+  Michalak-Provost, Cecillon, Lejeune, Hosseini, Choe, Orth, Bernreuther,
+  Boulday, Denier, Labauge, \& Tournier-Lasserve}]{riant2013}
+Riant, F., Bergametti, F., Fournier, H.~D., Chapon, F., Michalak-Provost, S.,
+  Cecillon, M., Lejeune, P., Hosseini, H., Choe, C., Orth, M., Bernreuther, C.,
+  Boulday, G., Denier, C., Labauge, P., \& Tournier-Lasserve, E. (2013).
+\newblock Ccm3 mutations are associated with early-onset cerebral hemorrhage
+  and multiple meningiomas.
+\newblock {\em Mol Syndromol\/}, {\em 4\/}(4), 165--72.
+\newline\urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/23801932}
+
+\end{thebibliography}
