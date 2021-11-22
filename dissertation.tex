@@ -4,7 +4,7 @@
 % and binding.
 
 % Other useful options (there are more options documented in Chapter 2):
-%  * draft -- don't actually include images, print a black bar on overful
+%  * draft -- don't actually include images, print a black bar on overfull
 %             hboxes
 %  * MS    -- Format for a Master's Thesis.  No UMI abstract page, some 
 %             textual changes to title page.  
@@ -21,6 +21,20 @@
 \usepackage{mathabx}
 \usepackage{multirow}
 \usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{dblfloatfix}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{lscape} 
+\usepackage{rotating}
+
+ %---------------- show page layout. don't use in a real document!
+    \usepackage{showframe}
+    \renewcommand\ShowFrameLinethickness{0.15pt}
+    \renewcommand*\ShowFrameColor{\color{red}}
+    %---------------------------------------------------------------%
+    
 % \usepackage{cite}  % If you include this, hyperlink cites will
                      % break.  It's nice to use this package if your bibstyle
 							% sorts entries by order-of-use, rather than
