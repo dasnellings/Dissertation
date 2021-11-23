@@ -19,20 +19,19 @@ We used capture-based library preparations to sequence 19 telangiectasia for the
 In each telangiectasia we identified a pathogenic germline mutation in either \italicize{ENG} or \italicize{ACVRL1}.   Although in most cases the individuals’ germline mutation was already known from clinical diagnostic sequencing, we intentionally remained blinded to this information until after our own sequence analysis of the tissue samples.  In 6003-1, the individual harbors a silent germline mutation which was found by the clinical lab and noted as a variant of unknown significance.  Below we show that this variant is indeed the pathogenic germline variant in this individual.
 
 We used the MuTect2 variant caller to detect variants present in the sequence data. To identify candidate somatic mutations, we removed variants based on several stringent filtering criteria including briefly; intronic or intergenic variants, population frequency $>$0.01\%, $<$0.1\% or $<$5 total supporting reads, low coverage, strand specificity, and low base quality scores. 
-To validate or refute the authenticity of each candidate somatic mutation we performed an independent round of amplification using primers flanking each putative variant position for each sample, and sequenced to $>$10000x coverage.   In each tissue sample, the identical somatic variant was re-identified.  Thus, these variants were bona fide somatic mutations existing in the telangiectatic tissue. In total, we identified somatic variants in 9 of 19 telangiectasia; 5 in \italicize{ENG}(NM\_001114753.1 (\italicize{ENG}\_v001)) 4 in \italicize{ACVRL1}(NM\_000020.2 (\italicize{ACVRL1}\_v001)) (Table. ~\ref{HHT_Table_1}) (Fig. ~\ref{HHT_Figure_1}) (See Methods). In each case, the somatic mutation was found in the same gene as the pathogenic germline mutation.   Somatic mutations were not found in any of the other 15 genes sequenced, not even in one of the other HHT casual genes.  Importantly, no telangiectasia harbored more than a single somatic mutation. The lack of mutational noise suggests these mutations are pathobiologically significant.  Importantly, all are consistent with strong mutations; five of the variants are small indels resulting in a frameshift, three are in-frame indels, and one is a point mutation 4 bases after an exon-intron boundary that is predicted to impact RNA splicing.
-
-\setlength{\rotFPtop}{20pt plus 1fil}
-\setlength{\rotFPbot}{-5pt plus 1fil}
-
+To validate or refute the authenticity of each candidate somatic mutation we performed an independent round of amplification using primers flanking each putative variant position for each sample, and sequenced to $>$10000x coverage.   In each tissue sample, the identical somatic variant was re-identified.  Thus, these variants were bona fide somatic mutations existing in the telangiectatic tissue. In total, we identified somatic variants in 9 of 19 telangiectasia; 5 in \italicize{ENG}(NM\_001114753.1 (\italicize{ENG}\_v001)) 4 in \italicize{ACVRL1}(NM\_000020.2 (\italicize{ACVRL1}\_v001)) (Table~\ref{HHT_Table_1}) (Figure~\ref{HHT_Figure_1}) (See Methods). In each case, the somatic mutation was found in the same gene as the pathogenic germline mutation.   Somatic mutations were not found in any of the other 15 genes sequenced, not even in one of the other HHT casual genes.  Importantly, no telangiectasia harbored more than a single somatic mutation. The lack of mutational noise suggests these mutations are pathobiologically significant.  Importantly, all are consistent with strong mutations; five of the variants are small indels resulting in a frameshift, three are in-frame indels, and one is a point mutation 4 bases after an exon-intron boundary that is predicted to impact RNA splicing.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %				     TABLE 1					%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\rotFPtop}{20pt plus 1fil}
+\setlength{\rotFPbot}{-5pt plus 1fil}
 \begin{sidewaystable}[]
 \footnotesize
 \renewcommand{\arraystretch}{1.2} 
 \centering
 \caption[Mutations Identified in HHT Telangiectasia]{Summary of Somatic Mutation Discovery and Validation Sequencing of HHT Telangiectasia.}
+
 \begin{tabularx}{\textheight}{c p{3.5cm} p{3.5cm} XXX}
 \toprule
 \textbf{Sample} & \textbf{Germline Mutation} & \textbf{Somatic Mutation} & \textbf{Discovery Reads}\textsuperscript{a} & \textbf{Validation Reads}\textsuperscript{a} & \textbf{Constitutional Reads}\textsuperscript{a} \\
@@ -55,6 +54,7 @@ To validate or refute the authenticity of each candidate somatic mutation we per
 \multicolumn{6}{l}{\textsuperscript{a}Allele frequency in other telangiectasia from 6001} \\
 \label{HHT_Table_1}
 \end{tabularx}
+
 \end{sidewaystable}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -67,7 +67,7 @@ To validate or refute the authenticity of each candidate somatic mutation we per
 \begin{center}
 \includegraphics[width=5in]{HHT_Fig1}
 \end{center}
-\caption[Low Frequency Somatic Mutations Detected in Telangiectasia.] {Visualization with IGV of next-generation sequencing data for one representative sample with a somatic mutation in \italicize{ACVRL1}. The somatic mutation in 6003-1, an A$>$T point mutation, is present at low frequency in DNA from telangiectatic tissue used for (A) discovery (capture-based sequencing) and (B) validation (amplicon-based sequencing). The mutation is below the level of sequencing noise in (C) constitutional DNA (amplicon-based sequencing) confirming the mutation is somatic.}
+\caption[Low Frequency Somatic Mutations Detected in Telangiectasia.] {Visualization with IGV of next-generation sequencing data for one representative sample with a somatic mutation in \italicize{ACVRL1}. The somatic mutation in 6003-1, an A$>$T point mutation, is present at low frequency in DNA from telangiectatic tissue used for (\textbf{A}) discovery (capture-based sequencing) and (\textbf{B}) validation (amplicon-based sequencing). The mutation is below the level of sequencing noise in (\textbf{C}) constitutional DNA (amplicon-based sequencing) confirming the mutation is somatic.}
 
 \label{HHT_Figure_1}
 \end{figure}
@@ -76,15 +76,126 @@ To validate or refute the authenticity of each candidate somatic mutation we per
 Although these variants fall well below the 50\% allele frequency expected for germline variants, it is formally possible that these variants exist constitutionally as very rare, somatic mosaic variation in the individual.  We next investigated whether these somatic mutations were present in constitutional DNA from the individual. A source of constitutional DNA (saliva) was available for three of the nine mutation-positive samples, and in each we find that the somatic mutation was completely absent or present at a level no higher than technical sequencing noise in that sample (see Methods).  Saliva was not available for 6001, but we obtained and sequenced DNA from multiple telangiectasia collected from this same individual. This enabled us to determine whether any of the five somatic mutations that we identified in individual samples was present in tissue of near identical pathobiology from the same individual; compared with saliva as a control, this is a more powerful test for somatic mosaicism. We found that the somatic mutations identified in five of the telangiectasia for which we identified a mutation were entirely absent in all other telangiectasia from this same individual. Finally, Sample 6005-1 is a single archived FFPE telangiectasia and no source of constitutional DNA is available. In total, we found that 9 of 19 telangiectasia harbor a somatic mutation specifically in the same gene as a pathogenic germline mutation and that these mutations are not present constitutionally. The presence of somatic mutations in telangiectasia fulfills the 1st expectation of the genetic two-hit mechanism. 
 
 \subsection{Somatic and Germline Mutations are Biallelic}
-The 2nd expectation of the genetic two-hit mechanism is that the somatic and germline mutations are biallelic; such that the somatic mutation occurs on the wild-type allele of the affected gene, in trans with the germline mutation. To determine if the mutations are biallelic we examined whether they were arranged in a cis or trans configuration by sequencing amplicons that cover the nucleotide positions of both somatic and germline mutations in a single molecule. The amplicons were sequenced with either short-read (Illumina) or long-read (PacBio) chemistry, depending on the amplicon size, in order to generate reads that would span the two mutations. In contrast to traditional Sanger sequencing which measures the population average at each position, both Illumina and PacBio chemistries output sequences of single DNA molecules.  In total we generated mutation-spanning reads for 7 telangiectasia, each with more than 100 reads that contained the somatic mutation. From these mutation-spanning reads we established that $>$95\% of reads with the somatic mutation possessed the wild type allele at the position of the germline mutation, showing that all 7 mutation pairs are in trans configuration (Table 2) (Fig. 2A-B). Any two variants in a chromosome must be arranged in cis or trans with an equal probability of either arrangement. Considering this, our observation that 7/7 mutation pairs are arranged in trans corresponds to a p-value of 0.008 demonstrating significant bias towards a trans configuration. These data show that the somatic and germline mutations are biallelic, fulfilling the 2nd expectation of the genetic two-hit mechanism.
+The 2nd expectation of the genetic two-hit mechanism is that the somatic and germline mutations are biallelic; such that the somatic mutation occurs on the wild-type allele of the affected gene, in trans with the germline mutation. To determine if the mutations are biallelic we examined whether they were arranged in a cis or trans configuration by sequencing amplicons that cover the nucleotide positions of both somatic and germline mutations in a single molecule. The amplicons were sequenced with either short-read (Illumina) or long-read (PacBio) chemistry, depending on the amplicon size, in order to generate reads that would span the two mutations. In contrast to traditional Sanger sequencing which measures the population average at each position, both Illumina and PacBio chemistries output sequences of single DNA molecules.  In total we generated mutation-spanning reads for 7 telangiectasia, each with more than 100 reads that contained the somatic mutation. From these mutation-spanning reads we established that $>$95\% of reads with the somatic mutation possessed the wild type allele at the position of the germline mutation, showing that all 7 mutation pairs are in trans configuration (Table~\ref{HHT_Table_2}) (Figure~\ref{HHT_Figure_2}A-B). Any two variants in a chromosome must be arranged in cis or trans with an equal probability of either arrangement. Considering this, our observation that 7/7 mutation pairs are arranged in trans corresponds to a p-value of 0.008 demonstrating significant bias towards a trans configuration. These data show that the somatic and germline mutations are biallelic, fulfilling the 2nd expectation of the genetic two-hit mechanism.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				     TABLE 2					%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[]
+\footnotesize
+\renewcommand{\arraystretch}{1.4} 
+\centering
+\caption[Phase of Somatic and Germline Mutations in Telangeicasia]{Phase of Somatic and Germline Mutation Pairs.}
+
+\begin{tabularx}{0.75\linewidth}{lllll}
+\multicolumn{5}{l}{} \\
+\toprule
+\textbf{Sample} & \textbf{Total Reads} & \textbf{Trans Reads} & \textbf{Cis Reads} & \textbf{P-value} \\
+\midrule
+6001-1	& N/A	& N/A						& N/A		& N/A \\\hline
+6001-3	& 112	& 112 (100\%)\textsuperscript{a}	& 0 (0\%)		& 1.9e-34 \\\hline
+6001-7	& 155	& 153 (98.7\%)\textsuperscript{a}	& 2 (1.3\%)	& 2.6e-43 \\\hline
+6001-8	& 593	& 590 (99.5\%)\textsuperscript{a}	& 3 (0.5\%)	& 1.0e-171 \\\hline
+6001-10	& N/A	& N/A						& N/A		& N/A \\\hline
+6002-1	& 125	& 120 (96.0\%)\textsuperscript{a}	& 5 (4.0\%)	& 5.5e-30 \\\hline
+6002-2	& 3189	& 3160 (99.0\%)\textsuperscript{bc}	& 29 (1.0\%)	& 4.2e-890 \\\hline
+6003-1	& 372	& 364 (97.8\%)\textsuperscript{bc}	& 6 (1.4\%)	& 1.4e-99 \\\hline
+6005-1	& 2671	& 2653 (99.3\%)\textsuperscript{bc}	& 18 (0.7\%)	& 6.3e-759 \\
+
+\bottomrule
+\multicolumn{5}{l}{\textsuperscript{a}Reads generated with PacBio long-read chemistry)} \\
+\multicolumn{5}{l}{\textsuperscript{b}Reads generated with Illumina short-read chemistry} \\
+\multicolumn{5}{l}{\textsuperscript{c}These reads were also used for validation shown in Table~\ref{HHT_Table_1}} \\
+\label{HHT_Table_2}
+\end{tabularx}
+
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				     FIGURE 2					%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{HHT_Fig2}
+\end{center}
+
+\caption[Establishing Phase of Germline and Somatic Mutations]{IGV visualization of two samples showing both methods of establishing phase. Each panel shows reads from the initial discovery sequencing and the reads used to establish phase. (\textbf{A}) Somatic and germline mutations in 6003-1 are both A$>$T point mutations and highlighted by the blue and green regions respectively. Since the distance between these mutations is relatively small (357bp) phase was established using Illumina short-reads (also used for validation). Black lines between reads denote read pairs, showing that both reads originate from a single molecule of DNA. Each molecule with the somatic mutation contains the wild-type allele at the germline mutation position proving the mutations are biallelic. (\textbf{B}) Somatic and germline mutations in 6001-3, both small deletions. The genomic distance between these mutations is 4377bp. In long reads that span the two mutations, each read with the somatic mutation contains the wild-type allele at the position of the germline mutation.}
+
+\label{HHT_Figure_2}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Mutations are Consistent with Homozygous Loss of Function}
-The 3rd expectation of the genetic two-hit mechanism is that the biallelic somatic and germline variants both result in loss of function. Due to the functional studies and extensive allelic series of mutations in each of the HHT genes, HHT is known to be caused by loss of function mutations.   The germline mutation in 4 of the 5 individuals in this study has been identified previously in an individual with HHT and are reported in ClinVar (6001:VCV000213214.2, 6002:VCV000212796.2, 6004/6005:VCV000008243.2).   There are also several publications supporting the pathogenicity of these mutations.\citep{johnson1995, bossler2006, gallione1998, ricard2010, olivieri2007}  These are all therefore bona fide loss of function mutations.  The germline mutation in 6003-1, a silent mutation in \italicize{ACVRL1} exon 4, has been identified before in an individual with HHT, however it was classified as a variant of unknown significance (VUS). We used the in silico tool Human Splicing Finder 3.1\citep{desmet2009} to analyze this variant and found that it was predicted to both disrupt an exonic splice enhancer and create an internal splice donor site, potentially activating a cryptic splice site. Based on this prediction, we extracted RNA from peripheral blood leukocytes of 6003 and a control individual and performed RT-PCR to examine the splicing of \italicize{ACVRL1} transcripts. RNA from 6003 shows a new splice variant that is not present in control wild-type RNA (Fig. 3B). As predicted by the Splice Finder program, the aberrant transcript is spliced precisely at the internal splice donor created by the mutation. The resulting transcript is missing the portion of exon 4 downstream of the germline mutation and skips exon 5 resulting in the in-frame deletion of 52 amino acids (Fig. 3D-E). This deleted region contains several codons with known pathogenic missense mutations, suggesting that the 52 amino acid deletion would likely also result in loss of function. It is possible that the skipping of exon 5 is due to alternative splicing observed only in peripheral blood leukocytes, rather than a result of the mutation. If exon 5 is retained, the mutation would then generate a protein lacking 17 amino acid residues from exon 4 but then be frameshifted for the remainder of the transcript.  With this evidence, all of the identified germline mutations meet the American College of Medical Genetics (ACMG) criteria for pathogenic mutations\citep{richards2015}, fulfilling the first half of the 3rd expectation of the genetic two-hit mechanism.  
+The 3rd expectation of the genetic two-hit mechanism is that the biallelic somatic and germline variants both result in loss of function. Due to the functional studies and extensive allelic series of mutations in each of the HHT genes, HHT is known to be caused by loss of function mutations.   The germline mutation in 4 of the 5 individuals in this study has been identified previously in an individual with HHT and are reported in ClinVar (6001:VCV000213214.2, 6002:VCV000212796.2, 6004/6005:VCV000008243.2).   There are also several publications supporting the pathogenicity of these mutations.\citep{johnson1995, bossler2006, gallione1998, ricard2010, olivieri2007}  These are all therefore bona fide loss of function mutations.  The germline mutation in 6003-1, a silent mutation in \italicize{ACVRL1} exon 4, has been identified before in an individual with HHT, however it was classified as a variant of unknown significance (VUS). We used the in silico tool Human Splicing Finder 3.1\citep{desmet2009} to analyze this variant and found that it was predicted to both disrupt an exonic splice enhancer and create an internal splice donor site, potentially activating a cryptic splice site. Based on this prediction, we extracted RNA from peripheral blood leukocytes of 6003 and a control individual and performed RT-PCR to examine the splicing of \italicize{ACVRL1} transcripts. RNA from 6003 shows a new splice variant that is not present in control wild-type RNA (Figure~\ref{HHT_Figure_3}B). As predicted by the Splice Finder program, the aberrant transcript is spliced precisely at the internal splice donor created by the mutation. The resulting transcript is missing the portion of exon 4 downstream of the germline mutation and skips exon 5 resulting in the in-frame deletion of 52 amino acids (Figure~\ref{HHT_Figure_3}D-E). This deleted region contains several codons with known pathogenic missense mutations, suggesting that the 52 amino acid deletion would likely also result in loss of function. It is possible that the skipping of exon 5 is due to alternative splicing observed only in peripheral blood leukocytes, rather than a result of the mutation. If exon 5 is retained, the mutation would then generate a protein lacking 17 amino acid residues from exon 4 but then be frameshifted for the remainder of the transcript.  With this evidence, all of the identified germline mutations meet the American College of Medical Genetics (ACMG) criteria for pathogenic mutations\citep{richards2015}, fulfilling the first half of the 3rd expectation of the genetic two-hit mechanism.  
 
-In contrast to the germline mutation, many of which have been previously identified, the somatic mutations we identified are all novel. The ACMG guidelines for establishing pathogenicity are not applicable to somatic variants, however several lines of evidence support that all of the somatic mutations result in loss of function. Five of the nine somatic mutations result in a frameshift; all resulting in premature termination codons which would generate transcripts susceptible to nonsense-mediated decay. Frameshift mutations in \italicize{ENG} or \italicize{ACVRL1} are the most common mechanism for loss of function leading to HHT. Based on this, the 5 somatic frameshift mutations likely result in loss of function. Other than frameshift mutations, the other 4 somatic mutations we identified consisted of 3 in-frame deletions and 1 intronic mutation predicted to impact splicing. These 4 mutations are not present in the genome aggregation database (gnomAD) showing that the population allele frequency of these variants is extremely low or zero. For the somatic in-frame deletion mutation found in 6001-8, there are two reports of different in-frame deletions with overlap at this position which are known to cause HHT, suggesting that the somatic deletion in 6001-8 is likely to result in loss of function. The somatic mutations in 6001-1 and 6002-2 also result in in-frame deletions, which delete 4 and 7 amino acids respectively. Comparing the crystal structures of \italicize{ENG} and \italicize{ACVRL1} we determined that the somatic mutations in 6001-1 and 6002-2 delete portions of a beta strand and helix respectively, potentially impacting protein folding (Table 3). The in silico tool PROVEAN was used to predict how the protein would tolerate these deletions.   The threshold of -2.5 or lower (more negative) is considered a deleterious change. The scores for 6001-8, 6001-1, and 6002-2 were -6.106, -14.903, and -25.903 respectively, strongly suggesting that all three are deleterious. The remaining somatic mutation is intronic, and occurs 4 nucleotides from the exon-intron boundary. We used Human Splicing Finder 3.1 to predict the effect of this variant on splicing, and found that it is likely to disrupt the donor site. This prediction was confirmed by RT-PCR using an in vitro splicing construct which revealed that the somatic mutation prevents the formation of full-length \italicize{ACVRL1} transcripts (Fig. 3C). In summary we present evidence supporting that the biallelic germline and somatic mutations all likely result in loss of function, fulfilling the 3rd expectation of the genetic two-hit mechanism. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				     FIGURE 3					%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=\textwidth]{HHT_Fig3}
+\end{center}
+
+\caption[Mutations in \italicize{ACVRL1} Disrupt Splicing]{(\textbf{A}) The gene structure of \italicize{ACVRL1} exons 3--6 marked with the location of the germline and somatic mutations found in 6003-1. (\textbf{B}) RT-PCR showing \italicize{ACVRL1} transcripts from peripheral blood leukocytes taken from wild-type (WT) and peripheral blood leukocytes containing the germline mutation. The labeled bands were excised and sequenced. Full length transcript (Band A) is present in both the control and leukocytes from 6003 although the level in leukocytes from 6003 is greatly reduced.  Band B in the control contains complete exons 3, 4 and 6.  This splice variant has been seen previously and differs from band C in 6003 which splices from the newly created splice donor site within exon 4 directly to exon 6. (\textbf{C}) As the somatic mutation is only present in 3.0\% of reads it would be challenging to detect misspliced RNA from the biopsied tissue. Therefore, we inserted wild-type and mutant sequence of \italicize{ACVRL1} into an in vitro splicing vector, pSPL3-\italicize{ACVRL1}, and used RT-PCR to visualize the impact of the mutation on splicing. Only WT band A shows the full-length transcript containing exon 5; there is no corresponding full-length transcript from the plasmid containing the somatic mutation. (\textbf{D}) Exon structure of \italicize{ACVRL1} transcripts determined by sequencing the excised bands. (\textbf{E}) Sequence of DNA showing the nature of the germline mutation. In \italicize{ACVRL1} transcripts containing the germline mutation, exon 4 is shortened due to the activation of a cryptic splice site. }
+
+\label{HHT_Figure_3}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In contrast to the germline mutation, many of which have been previously identified, the somatic mutations we identified are all novel. The ACMG guidelines for establishing pathogenicity are not applicable to somatic variants, however several lines of evidence support that all of the somatic mutations result in loss of function. Five of the nine somatic mutations result in a frameshift; all resulting in premature termination codons which would generate transcripts susceptible to nonsense-mediated decay. Frameshift mutations in \italicize{ENG} or \italicize{ACVRL1} are the most common mechanism for loss of function leading to HHT. Based on this, the 5 somatic frameshift mutations likely result in loss of function. Other than frameshift mutations, the other 4 somatic mutations we identified consisted of 3 in-frame deletions and 1 intronic mutation predicted to impact splicing. These 4 mutations are not present in the genome aggregation database (gnomAD) showing that the population allele frequency of these variants is extremely low or zero. For the somatic in-frame deletion mutation found in 6001-8, there are two reports of different in-frame deletions with overlap at this position which are known to cause HHT, suggesting that the somatic deletion in 6001-8 is likely to result in loss of function. The somatic mutations in 6001-1 and 6002-2 also result in in-frame deletions, which delete 4 and 7 amino acids respectively. Comparing the crystal structures of \italicize{ENG} and \italicize{ACVRL1} we determined that the somatic mutations in 6001-1 and 6002-2 delete portions of a beta strand and helix respectively, potentially impacting protein folding (Table~\ref{HHT_Table_3}). The in silico tool PROVEAN was used to predict how the protein would tolerate these deletions.   The threshold of -2.5 or lower (more negative) is considered a deleterious change. The scores for 6001-8, 6001-1, and 6002-2 were -6.106, -14.903, and -25.903 respectively, strongly suggesting that all three are deleterious. The remaining somatic mutation is intronic, and occurs 4 nucleotides from the exon-intron boundary. We used Human Splicing Finder 3.1 to predict the effect of this variant on splicing, and found that it is likely to disrupt the donor site. This prediction was confirmed by RT-PCR using an in vitro splicing construct which revealed that the somatic mutation prevents the formation of full-length \italicize{ACVRL1} transcripts (Figure~\ref{HHT_Figure_3}C). In summary we present evidence supporting that the biallelic germline and somatic mutations all likely result in loss of function, fulfilling the 3rd expectation of the genetic two-hit mechanism. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				     TABLE 3					%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[]
+\footnotesize
+\renewcommand{\arraystretch}{1.7} 
+\centering
+\caption[Predicted Consequences of Germline and Somatic Mutations]{Evidence Germline and Somatic Mutations Result in Loss of Function.}
+
+\begin{tabularx}{\textwidth}{l p{3.6cm} X}
+\multicolumn{3}{l}{} \\
+\toprule
+\textbf{Sample} & \textbf{Germline Mutation} & \textbf{Somatic Mutation} \\
+\midrule
+6001-1 & Frameshift: PVS1 \newline 6 supporting publications &In-Frame Deletion (-4 residues) \newline PROVEAN: Deleterious (-14.903) \newline deletes region in $\beta$-sheet \newline gnomAD AF: 0 \\\hline
+6001-3 & same as above & Frameshift \newline common ENG LOF mechanism, expect NMD \\\hline
+6001-7 & same as above & Frameshift \newline common ENG LOF mechanism, expect NMD \\\hline
+6001-8 & same as above & In-Frame Delins (-1 +2 residues) \newline 2 pathogenic in-frame indels overlapping this codon \cite{46,47} \newline PROVEAN: Deleterious (-6.106) \newline gnomAD AF: 0 \\\hline
+6001-10 & same as above & Frameshift \newline common ENG LOF mechanism, expect NMD \\\hline
+6002-2 & same as above & In-Frame Delins (-7 +1 residues) \newline PROVEAN: Deleterious (-25.903) \newline deletes region in $\alpha$-helix \newline gnomAD AF: 0 \\\hline
+6003-1 & Cryptic Splice Site: PS3 \newline in silico predicted to activate cryptic site \newline in vitro evidence (Figure~\ref{HHT_Figure_3}) & Splice Site \newline in silico predicted to disrupt donor site \newline gnomAD AF: 0 \\\hline
+6005-1 & Missense: PS1 \newline 16 supporting publications & Frameshift \newline common ACVRL1 LOF mechanism, expect NMD \\
+\bottomrule
+\multicolumn{3}{l}{\scriptsize{AF = Allele Frequency; NMD = Nonsense Mediated Decay}} \\
+\multicolumn{3}{l}{\scriptsize{Germline variant classification according to ACMG guidelines, not applicable to somatic variants\citep{richards2015}}} \\
+\multicolumn{3}{l}{\scriptsize{PVS1 = Very strong evidence for pathogenicity; PS1-4 = Strong evidence}} \\
+\multicolumn{3}{l}{\scriptsize{PROVEAN scores below -2.5 are predicted deleterious}} \\
+\label{HHT_Table_3}
+\end{tabularx}
+
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Telangiectasia from the Same Individual Harbor Unique Somatic Mutations}
-We next sought to determine whether mutant cells in different telangiectasia derive from a somatic mutation in a common ancestor cell, or whether the mutant cell population in each telangiectasia derives from an independent somatic mutation event. To test this, we examined the somatic mutations present in multiple telangiectasia from single individuals. In 6001, for which we had obtained 13 different telangiectasia, we identified a somatic mutation in 5 telangiectasia tissue samples.  In each case the somatic mutation in each telangiectasia was unique. Likewise, for 6002, for which we had two telangiectasia, we identified a unique somatic mutation in each (Fig. 4). These results are consistent with independent mutation events rather than the somatic mutation occurring in a progenitor cell or clonality due to a metastasis from a single initial lesion. 
+We next sought to determine whether mutant cells in different telangiectasia derive from a somatic mutation in a common ancestor cell, or whether the mutant cell population in each telangiectasia derives from an independent somatic mutation event. To test this, we examined the somatic mutations present in multiple telangiectasia from single individuals. In 6001, for which we had obtained 13 different telangiectasia, we identified a somatic mutation in 5 telangiectasia tissue samples.  In each case the somatic mutation in each telangiectasia was unique. Likewise, for 6002, for which we had two telangiectasia, we identified a unique somatic mutation in each (Figure~\ref{HHT_Figure_4}). These results are consistent with independent mutation events rather than the somatic mutation occurring in a progenitor cell or clonality due to a metastasis from a single initial lesion. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				     FIGURE 4					%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sidewaysfigure}[tbp!]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{HHT_Fig4}
+\end{center}
+
+\caption[Each Telangiectasia is Seeded by a Unique Somatic Mutation]{Schematic representation of exons in \italicize{ENG} and \italicize{ACVRL1} with germline and somatic mutations identified in (\textbf{A}) 5 telangiectasia collected from 6001 and (\textbf{B}) 2 telangiectasia collected from 6002. In each panel the common germline mutation is listed above the gene and somatic mutations in each telangiectasia below the gene. Gene structure and mutation position are drawn to scale. }
+
+\label{HHT_Figure_4}
+\end{sidewaysfigure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Discussion}
 \subsection{Evidence for a Genetic Two-Hit Mechanism}
