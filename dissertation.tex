@@ -28,6 +28,7 @@
 \usepackage{adjustbox}
 \usepackage{lscape} 
 \usepackage{rotating}
+\usepackage[letterspace=70]{microtype}
 
 %---------------- show page layout. don't use in a real document!
 \usepackage{showframe}
@@ -130,7 +131,15 @@
 % DEDICATION -- OPTIONAL.  Put the text inside the braces.
 %               (Long 'dedications' probably belong in the acknowledgements)
 %-----------------------------------------------------------------------------%
-\dedication{\centerline{If you want to dedicate your thesis to anyone do so here}}
+\dedication{
+\centerline{for my friend} 
+
+\begin{large}
+\centerline{\lsstyle{LUCA FRANZINI}}
+\end{large}
+
+%\centerline{DEDICATED}
+}
 
 %-----------------------------------------------------------------------------%
 % FRONTMATTER -- ToC is required, LoT and LoF are required if you have any
