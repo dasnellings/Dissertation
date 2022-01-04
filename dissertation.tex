@@ -28,7 +28,6 @@
 \usepackage{adjustbox}
 \usepackage{lscape} 
 \usepackage{rotating}
-\usepackage[letterspace=70]{microtype}
 
 %---------------- show page layout. don't use in a real document!
 \usepackage{showframe}
@@ -134,9 +133,10 @@
 \dedication{
 \centerline{for my friend} 
 
-\begin{large}
-\centerline{\lsstyle{L\kern-0.05em U\kern-0.05em C\kern-0.05em A FRANZINI}}
-\end{large}
+\begin{Large}
+\centerline{L\kern0.02em \textsc{u\kern0.02em c\kern0.02em a} 
+F\kern0.05em \textsc{r\kern0.05em a\kern0.05em n\kern0.05em z\kern0.05em i\kern0.05em n\kern0.05em i}}
+\end{Large}
 
 %\centerline{DEDICATED}
 }
@@ -165,7 +165,7 @@
 %-----------------------------------------------------------------------------%
 \include{{./Chapters/Intro/introduction}}
 \include{{./Chapters/HHT_TwoHit/hht}} % A regular chapter, starts with '\chapter{Title}'
-\include{{./Chapters/GNAQ/gnaq}}
+%\include{{./Chapters/GNAQ/gnaq}}
 %\include{{./Chapters/CCM_MAP3K3/map3k3}}
 \include{{./Chapters/CCM_PIK3CA/pik3ca}}
 \include{{./Chapters/DVA/dva}}
