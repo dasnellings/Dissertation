@@ -1,1 +1,45 @@
-\chapter{Probability of Multiple Somatic Mutations}
+\chapter{Probability of Somatic Mutations}
+\clearpage
+
+When describing my results to colleagues I am often met with the questions: ``How can so many somatic mutations be occurring? Could these lesions have an elevated mutation rate?". Though our intuition says it cannot be possible, I maintain that the somatic mutations I find in vascular malformations are the result of random chance via normal mutagenic processes. Unfortunately, too little is known about the rates of mutagenesis across the genome and in different tissues to accurately quantify the probability of these events. Despite this limitation, in this Appendix I attempt to conservatively estimate the probability of the events I describe in Chapters 2--4. The goal of this exercise is solely to highlight the disconnect between intuition and reality by showing that the empirically determined rate of disease is of similar magnitude to my conservative estimations. 
+
+\section{Two-Hit Mutations in HHT}
+In this section we consider the probability of biallelic loss of function (LOF) occurring in a single cell of an individual with HHT. For this exercise we will assume the individual has a germline heterozygous mutation in \italicize{ENG}. The probability of a somatic mutation resulting in biallelic LOF in a single cell ($\italicize{ENG}_{sc}^{-/-}$) is a function of the somatic mutation rate ($\mu_{som}$), the probability a mutation falls in the CDS of \italicize{ENG} ($\italicize{ENG}_{CDS}$), results in LOF, and is in \italicize{trans} with the germline mutation ($0.5$ for diploid organisms) per somatic single-nucleotide variant (sSNV) such that
+\begin{equation*}
+P(\italicize{ENG}_{sc}^{-/-}) = \mu_{som} \cdot \frac{P(\italicize{ENG}_{CDS}) \cdot P(LOF) \cdot 0.5}{sSNV}
+\end{equation*}
+
+Empirical data for $\mu_{som}$ is not available for endothelial cells, however $\mu_{som}$ has been evaluated for neurons via single-cell whole-genome sequencing \citep{lodato2018} and was determined to be roughly 40 sSNV per year of life ($sSNV/year$). As mutation rates are tightly linked to DNA synthesis, the values from neurons should suffice as a conservative estimate of the $\mu_{som}$ for endothelial cells. 
+
+Assuming that the rate of somatic mutations in \italicize{ENG} matches the genome-wide average, then 
+\begin{equation*}
+P(\italicize{ENG}_{CDS}) = \frac{ENG~CDS~Length}{Human~Genome~Size} = \frac{1977 bp}{3.23 \times 10^9 bp} = 6.1 \times 10^{-7}
+\end{equation*}
+
+Determining whether a given mutation may result in LOF is difficult as the effects of missense and silent variants are hard to predict. Therefore here we will only consider nonsense mutations, which will almost always result in LOF. Of the 5931 possible sSNVs in the CDS of \italicize{ENG}, 507 of them result in the creation of a premature stop codon (see \url{https://github.com/dasnellings/lofprob} for code). Therefore,
+\begin{equation*}
+P(LOF) = \frac{507}{5931} = 0.085
+\end{equation*}
+
+Replacing these values in the original equation yields
+\begin{equation*}
+P(\italicize{ENG}_{sc}^{-/-}) = \frac{40~sSNV}{year} \cdot \frac{6.1 \times 10^{-7} \cdot 0.085 \cdot 0.5}{sSNV} = \frac{1.0 \times 10^{-6}}{year}
+\end{equation*}
+
+So every year, there is a 1 in 1,000,000 chance of biallelic LOF in \italicize{ENG} per cell. While this is a very low probability, consider that there are an estimated $1 \times 10^{12}$ endothelial cells in an adult human \citep{jaffe1987}. This suggests that 1,000,000 endothelial cells in an adult with HHT acquire biallelic LOF in \italicize{ENG} every year. Although the values I used for mutation rate and probability of LOF are almost certainly underestimates, the result is still many order of magnitude higher than what we may expect. The most aggressive cases of HHT have hundreds of telangiectasia---not millions. This discrepancy likely reflects the fact that not all endothelial cells have the capacity to form an AVM, and likely only when conditions are right. Nonetheless, this demonstrates that the mutation itself is not as unlikely as it may initially appear. 
+
+\section{Three-Hit Mutations in Familial CCM}
+
+\section{Three-Hit Mutations in Sporadic CCM}
+
+\section{Three-Hit Mutations in Sporadic CCM via DVA}
+
+
+
+
+
+
+
+
+
+
