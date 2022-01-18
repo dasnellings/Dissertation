@@ -1,7 +1,9 @@
 \chapter{Probability of Somatic Mutations}
 \clearpage
 
-When describing my results to colleagues I am often met with the questions: ``How can so many somatic mutations be occurring? Could these lesions have an elevated mutation rate?". Though our intuition says it cannot be possible, I maintain that the somatic mutations I find in vascular malformations are the result of random chance via normal mutagenic processes. Unfortunately, too little is known about the rates of mutagenesis across the genome and in different tissues to accurately quantify the probability of these events. Despite this limitation, in this Appendix I attempt to conservatively estimate the probability of the events I describe in Chapters 2--4. The goal of this exercise is solely to highlight the disconnect between intuition and reality by showing that the empirically determined rate of disease is of similar magnitude to my conservative estimations. 
+When describing my results to colleagues I am often met with the questions: ``How can so many somatic mutations be occurring? Could these lesions have an elevated mutation rate?". Though our intuition says it cannot be possible, I maintain that the somatic mutations I find in telangiectasia are the result of random chance via normal mutagenic processes. Unfortunately, too little is known about the rates of mutagenesis across the genome and in different tissues to accurately quantify the probability of these events. Despite this limitation, in this Appendix I attempt to conservatively estimate the probability of the events I describe in Chapter 2. The goal of this exercise is solely to highlight the disconnect between intuition and reality by showing that the empirically determined rate of disease is of similar magnitude to my conservative estimations. 
+
+
 
 \section{Two-Hit Mutations in HHT}
 In this section we consider the probability of biallelic loss of function (LOF) occurring in a single cell of an individual with HHT. For this exercise we will assume the individual has a germline heterozygous mutation in \italicize{ENG}. The probability of a somatic mutation resulting in biallelic LOF in a single cell ($\italicize{ENG}_{sc}^{-/-}$) is a function of the somatic mutation rate ($\mu_{som}$), the probability a mutation falls in the CDS of \italicize{ENG} ($\italicize{ENG}_{CDS}$), results in LOF, and is in \italicize{trans} with the germline mutation ($0.5$ for diploid organisms) per somatic single-nucleotide variant (sSNV) such that
@@ -26,13 +28,55 @@ Replacing these values in the original equation yields
 P(\italicize{ENG}_{sc}^{-/-}) = \frac{40~sSNV}{year} \cdot \frac{6.1 \times 10^{-7} \cdot 0.085 \cdot 0.5}{sSNV} = \frac{1.0 \times 10^{-6}}{year}
 \end{equation*}
 
-So every year, there is a 1 in 1,000,000 chance of biallelic LOF in \italicize{ENG} per cell. While this is a very low probability, consider that there are an estimated $1 \times 10^{12}$ endothelial cells in an adult human \citep{jaffe1987}. This suggests that 1,000,000 endothelial cells in an adult with HHT acquire biallelic LOF in \italicize{ENG} every year. Although the values I used for mutation rate and probability of LOF are almost certainly underestimates, the result is still many order of magnitude higher than what we may expect. The most aggressive cases of HHT have hundreds of telangiectasia---not millions. This discrepancy likely reflects the fact that not all endothelial cells have the capacity to form an AVM, and likely only when conditions are right. Nonetheless, this demonstrates that the mutation itself is not as unlikely as it may initially appear. 
+So every year, there is a 1 in 1,000,000 chance of biallelic LOF in \italicize{ENG} per cell. While this is a very low probability, consider that there are an estimated $1 \times 10^{12}$ endothelial cells in an adult human \citep{jaffe1987}. This suggests that 1,000,000 endothelial cells in an adult with HHT acquire biallelic LOF in \italicize{ENG} every year. Although the values I used for mutation rate and probability of LOF are almost certainly underestimates, the result is still many orders of magnitude higher than what we may expect. The most aggressive cases of HHT have hundreds of telangiectasia---not millions. This discrepancy likely reflects the fact that not all endothelial cells have the capacity to form an AVM, and likely only when conditions are right. Nonetheless, this demonstrates that the mutation itself is not as unlikely as it may initially appear. 
 
-\section{Three-Hit Mutations in Familial CCM}
 
-\section{Three-Hit Mutations in Sporadic CCM}
 
-\section{Three-Hit Mutations in Sporadic CCM via DVA}
+%\section{Three-Hit Mutations in Familial CCM}
+%In this section we consider the probability of biallelic loss of function in \italicize{KRIT1} \textbf{and} gain of function (GOF) in \italicize{PIK3CA} in a single cell of an individual with familial CCM (germline $\italicize{KRIT1}^{+/-}$). Using the same nomenclature as before, and adding a new term for \italicize{PIK3CA} GOF
+%\begin{equation*}
+%P(\italicize{KRIT1}_{sc}^{-/-};\italicize{PIK3CA}_{sc}^{GOF/+}) = \mu_{som} \cdot P(\italicize{KRIT1}_{sc}^{-/-}) \cdot P(\italicize{PIK3CA}_{sc}^{GOF/+})
+%\end{equation*}
+
+%\begin{equation*}
+%P(\italicize{KRIT1}_{sc}^{-/-}) = \frac{P(\italicize{KRIT1}_{CDS}) \cdot P(LOF) \cdot 0.5}{sSNV}
+%\end{equation*}
+
+%\begin{equation*}
+%P(\italicize{PIK3CA}_{sc}^{GOF/+}) = \frac{P(\italicize{PIK3CA}_{CDS}) \cdot P(GOF)}{sSNV}
+%\end{equation*}
+
+%Solving first for $P(\italicize{KRIT1}_{sc}^{-/-})$; the CDS of \italicize{KRIT1} is 2211bp and we find that there 718 possible nonsense sSNVs out of a total 6633 possible sSNVs (see \url{https://github.com/dasnellings/lofprob} for code), therefore
+%\begin{equation*}
+%P(\italicize{KRIT1}_{CDS}) = \frac{KRIT1~CDS~Length}{Human~Genome~Size} = \frac{2211 bp}{3.23 \times 10^9 bp} = 6.8 \times 10^{-7}
+%\end{equation*}
+
+%\begin{equation*}
+%P(LOF) = \frac{718}{6633} = 0.11
+%\end{equation*}
+
+%\begin{equation*}
+%P(\italicize{KRIT1}_{sc}^{-/-}) = \frac{P(\italicize{KRIT1}_{CDS}) \cdot P(LOF) \cdot 0.5}{sSNV} = \frac{6.8 \times 10^{-7} \cdot 0.11 \cdot 0.5}{sSNV} = \frac{3.7 \times 10^{-8}}{sSNV}
+%\end{equation*}
+
+%Next solving for $P(\italicize{PIK3CA}_{sc}^{GOF/+})$; the CDS of \italicize{PIK3CA} is 3204bp. As a conservative estimate of the number of sSNV that may cause GOF we will consider only the 8 that have been identified in CCM (Figure~\ref{PIK_discovery}A) of the possible 9612 sSNV.
+%\begin{equation*}
+%P(\italicize{PIK3CA}_{CDS}) = \frac{PIK3CA~CDS~Length}{Human~Genome~Size} = \frac{3204 bp}{3.23 \times 10^9 bp} = 6.8 \times 10^{-7} = 1.0 \times 10^{-6}
+%\end{equation*}
+
+%\begin{equation*}
+%P(GOF) = \frac{8}{9612} = 8.3 \times 10^{-4}
+%\end{equation*}
+
+%\begin{equation*}
+%P(\italicize{PIK3CA}_{sc}^{GOF/+}) = \frac{P(\italicize{PIK3CA}_{CDS}) \cdot P(GOF)}{sSNV} = \frac{1.0 \times 10^{-6} \cdot 8.3 \times 10^{-4}}{sSNV} = \frac{8.3 \times 10^{-10}}{sSNV}
+%\end{equation*}
+
+
+
+%\section{Three-Hit Mutations in Sporadic CCM}
+
+%\section{Three-Hit Mutations in Sporadic CCM via DVA}
 
 
 
