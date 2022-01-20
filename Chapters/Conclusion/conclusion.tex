@@ -22,7 +22,7 @@ In the following sections I will discuss several open lines of inquiry, potentia
 One important open question across my studies is the mutation status of lesions where I did not identify somatic mutations. In Chapter 2, I did not find a somatic mutation in 10 of 19 telangiectasia. In Chapters 3 and 4, I did not find causal somatic mutations (CCM genes or \italicize{MAP3K3}) in 25 of 51 sporadic CCMs and 10 of 20 familial CCMs. It is possible that these lesions have mutations in other genes that we did not sequence; however, I believe it is more likely that these lesions harbor mutations that cannot be detected by my sequencing method. Throughout these studies I used targeted short-read sequencing for mutation discovery. This method is extremely powerful for detecting single nucleotide variants and relatively small insertions or deletions, but is unable to detect all possible types of somatic loss of function mutations. In this section I will discuss two types of mutation that may result in loss of function, but are not detectable by traditional short-read sequencing approaches: somatic hypermethylation, and somatic loss of heterozygosity. 
 
 \subsection{Somatic Hypermethylation}
-Cytosine methylation occurs at CpG dinucleotides and results in the addition of a methyl group \italicize{ortho} to the amine of cytosine.  Methylation of cytosines in the promotor region of a gene is a well established regulatory mark that results in decreased expression. In cancer, increased methylation (or hypermethylation) in the promotor of a tumor suppressor gene is a common and effective method of gene silencing as reviewed here \citep{baylin2005}. Similar to cancer, it is possible that somatic hypermethylation in the promotors of causal genes in HHT or CCM may result in silencing---and therefore LOF---which would be invisible to traditional sequencing.
+Cytosine methylation occurs at CpG dinucleotides and results in the addition of a methyl group \italicize{ortho} to the amine of cytosine.  Methylation of cytosines in the promoter region of a gene is a well established regulatory mark that results in decreased expression. In cancer, increased methylation (or hypermethylation) in the promoter of a tumor suppressor gene is a common and effective method of gene silencing as reviewed here \citep{baylin2005}. Similar to cancer, it is possible that somatic hypermethylation in the promoters of causal genes in HHT or CCM may result in silencing---and therefore LOF---which would be invisible to traditional sequencing.
 
 I attempted to detect somatic hypermethylation events in mutation-negative telangiectasia using targeted bisulfite sequencing. Bisulfite treatment of DNA converts any unmethylated cytosines to uracil via deamination such that any cytosines in the sequencing reads can be identified as methylated (Figure~\ref{Somatic_Hypermethylation}). 
 %%%%%%%%%%%%%%%
@@ -34,9 +34,111 @@ I attempted to detect somatic hypermethylation events in mutation-negative telan
 \label{Somatic_Hypermethylation}
 \end{figure}
 %%%%%%%%%%%%%%
-I first identified CpG islands in the promoters of \italicize{ENG}, \italicize{ACVRL1}, and \italicize{SMAD4} (Figure~\ref{HHT_Promotors}) and designed primers to target the islands in \italicize{ENG} and ACVRL1
+I first identified CpG islands in the promoters of \italicize{ENG}, \italicize{ACVRL1}, and \italicize{SMAD4} (Figure~\ref{HHT_Promoters}) and designed primers to target the islands in \italicize{ENG} and \italicize{ACVRL1} (Figure~\ref{HHT_Primers}). Though \italicize{SMAD4} causes HHT, we did not design primers for this gene as we did not have any telangiectasia from individuals with a \italicize{SMAD4} germline mutation.
+%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=5.8in]{HHT_Promoters}
+\end{center}
+\caption[CpG Islands in HHT Gene Promoters]{\textbf{CpG Islands in HHT Gene Promoters.} \\ UCSC genome browser images of the promoter regions of \italicize{ENG}, \italicize{ACVRL1}, and \italicize{SMAD4}. CpG islands are marked in light green. ($<$300bp) or dark green ($>$300bp) along with H3K27Ac marks over the region.}
+\label{HHT_Promoters}
+\end{figure}
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=5in]{HHT_Primers}
+\end{center}
+\caption[Primers Targeting CpG Islands in \italicize{ENG} and \italicize{ACVRL1}]{\textbf{Primers Targeting CpG Islands in \italicize{ENG} and \italicize{ACVRL1}.} \\ Primer design targeting dense regions of CpG dinucleotides (light blue) in \italicize{ENG} and \italicize{ACVRL1}. The CpG island in \italicize{ACVRL1} was too large to cover in a single amplicon, therefore I designed three primers to cover the regions of highest density, while designing primers to avoid CpGs which may impact annealing efficiency. }
+\label{HHT_Primers}
+\end{figure}
+%%%%%%%%%%%%%%
+As a control for these experiments we considered telangiectasia with a known somatic mutation as a negative control for somatic hypermethylation and compared them to mutation-negative telangiectasia which may have somatic hypermethylation as a means of LOF.
+
+These experiments were ultimately uninformative as we observed high variability in the methylation rate in the \italicize{ENG} promoter and we only had a single sample with a germline mutation in \italicize{ACVRL1} that did not have a known somatic mutation (Figure~\ref{Methylation_Results}). 
+%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=5.8in]{Methylation_Results}
+\end{center}
+\caption[Promoter Methylation in \italicize{ENG} and \italicize{ACVRL1}]{\textbf{Promoter Methylation in \italicize{ENG} and \italicize{ACVRL1}.} \\  Methylation of telangiectasia with (green) or without (red) a previously identified somatic mutation for \italicize{ENG} (left) or \italicize{ACVRL1} (right). The \italicize{ENG} promoter shows high levels of somatic methylation in both the experimental samples and the controls. The \italicize{ACVRL1} promoter shows rather low level of basal methylation, but shows no significant secondary peak as might be expected by somatic hypermethylation.}
+\label{Methylation_Results}
+\end{figure}
+%%%%%%%%%%%%%%
+These results are likely confounded by the limited efficiency of bisulfite conversion as well a very limited sample size. In addition any somatic hypermethylation would be expected to occur mainly in endothelial cells; however, these crude punch biopsies contain a substantial amount of unaffected tissue around the telangiectasia, and endothelial cells are likely only a fraction of all cells in the biopsy. More samples will be required to determine if somatic hypermethylation of endothelial cells could result in LOF via silencing, though we will also need to overcome the technical limitations we encountered in these pilot experiments. 
+
+Firstly, bisulfite conversion is not 100\% efficient. This is not a concern when evaluating germline methylation levels, however high conversion efficiency will be required to pick up low frequency somatic events in a highly heterogeneous tissue. As an alternative to bisulfite conversion, several long-read sequencing technologies (e.g. Pacbio and Oxford Nanopore) are capable of detecting DNA base modifications such as methylation during sequencing. This would be a more direct measure of methylation and would bypass the need for bisulfite conversion.
+
+The second major limitation in these experiments is the heterogeneous tissue. It would be very beneficial to isolate endothelial cells prior to DNA extraction to increase the allele frequency of any potential somatic event. Traditionally this would be done by generating a single-cell suspension and staining for an endothelial cell-specific protein such as PECAM and sorting based on that marker. As we receive telangiectasia primarily from Canada, it is necessary that they be frozen prior to shipment which disrupts the cell membrane thereby precluding the generation of a single-cell suspension. However, I have had some success generating single-\italicize{nucleus} suspensions from telangiectasia, similar to what I have done for CCMs in Chapters 3 and 4. The nuclei yield from telangiectasia is low relative to CCMs (around 20,000 per telangiectasia), however it is feasible to stain these nuclei. The common endothelial cell stain PECAM is not present on the nuclear membrane; however the transcription factor ERG is present inside nuclei, and is highly specific to endothelial cells. ERG is a commonly used stain and I have attempted to stain nuclei with it, however my initial experiments were unsuccessful and I eventually abandoned the project in favor of bulk sequencing. This would be a powerful tool if a robust staining protocol could be developed. 
 
 \subsection{Somatic Loss of Heterozygosity}
+The second type of event I will discuss is somatic loss of heterozygosity (LOH) events. LOH is a general term that refers to loss of an allele resulting in a previously heterozygous site becoming homozygous. For example, loss of the wild type \italicize{ENG} allele in an individual with a germline \italicize{ENG} mutation would result in biallelic LOF and could theoretically be a source of the missing mutations. LOH can result from a variety of different genomic events such as a large deletion or mitotic recombination. Like somatic hypermethylation, LOH is a common mechanism in cancers to disrupt tumor suppressor genes. While targeted short-read sequencing is great for detecting small variants, it is blind to these chromosome-scale events which occur in a small number of somatic cells---i.e. we miss the forest for the trees. 
+
+LOH in cancer samples is often detected via a SNP array such that an LOH event of reasonable frequency (often $\geq$25\%) can be visualized as a shift in copy number for a subset of markers---e.g. heterozygous markers in an unaffected region of the chromosome are present at 1~:~1 ratio, whereas markers over an LOH event at 25\% AF are present at a 1.25~:~0.75 ratio. This method works well for events with high allele frequencies, however the somatic variants I find in CCM and HHT are far lower, with most $<$5\%. This makes detection by SNP array challenging as we must identify a ratio of 1.05~:~0.95 in a fairly noisy assay. Reaching statistical significance with such a minor shift would require a very dense SNP array and a very large LOH event making this methodology infeasible. 
+
+While detecting these events is nigh impossible with bulk sequencing, it is theoretically trivial with single-nucleus DNA sequencing (snDNA-seq). As an initial experiment, I performed snDNA-seq on familial CCM samples for which I did not find a somatic mutation. To detect somatic LOH in these samples, I needed only to sequence the pathogenic germline mutation and determine whether that heterozygous mutation was homozygous in some of the cells (Figure~\ref{Single_Cell_LOH}).
+%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=5.8in]{Single_Cell_LOH}
+\end{center}
+\caption[Somatic LOH Detection with snDNA-seq]{\textbf{Somatic LOH Detection with snDNA-seq.} \\  Reads from bulk sequencing show a pathogenic mutation at an allele frequency of 60\%. From in reads from single-nucleus sequencing it is clear that four cells have the expected heterozygous genotype, but one cell is homozygous for the pathogenic mutation, indication a somatic LOH event. }
+\label{Single_Cell_LOH}
+\end{figure}
+%%%%%%%%%%%%%%
+The problem with this approach, as discussed in Chapter 3, is that snDNA-seq is confounded by stochastic allelic dropout (ADO) at a rate of 5--10\% per allele. As a result, if 1000 nuclei are sequenced, we find that around 800 with have the expected heterozygous genotype, 100 will be homozygous for the reference allele, and 100 will be homozygous for the alternate allele. As ADO often occurs at similar or higher frequencies than the expected somatic LOH events, this targeted method is infeasible. 
+
+In an attempt to overcome ADO I designed a panel for snDNA-seq that targets common SNPs such that we capture a high density of SNPs in the region of the genes of interest, with progressively lower density of markers towards the distal ends of the chromosome. This pattern was selected because there is a limit to how many markers we can use on a single panel (about 400 amplicons) and this pattern maximizes our chance of finding informative heterozygous SNPs in the region of the gene, while still maintaining some sensitivity for larger events that may impact a large portion of the chromosome. Any LOH event should convert multiple contiguous heterozygous markers to homozygosity and would theoretically be robust against random ADO of individual amplicons. Using this method, I again found that ADO was a major confounder. I initially expected that ADO would be largely stochastic such that each marker would be independent of the state of other markers. However, I found that ADO events were in fact `linked', such that a set of markers that was physically close on one allele would drop out as a set (Figure~\ref{Linked_ADO}). 
+%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=5.8in]{Linked_ADO}
+\end{center}
+\caption[Linked Allelic Dropout]{\textbf{Linked Allelic Dropout.} \\  Results of snDNA-seq of four SNPs, not involved in disease pathogenesis, that span a 50kb region and are all heterozygous in the germline. 85\% of the sequenced nuclei have the expected heterozygous genotype (Clone 1). However, Clones 2 and 3 show linked dropout of the entire alternate or reference allele at 6.3\% and 5.3\% respectively. Similarly, Clones 4 and 5 show linked dropout of the alternate allele in a smaller region of the last 2 or first 2 variants that are physically close.}
+\label{Linked_ADO}
+\end{figure}
+%%%%%%%%%%%%%%
+In effect, I was seeing dropout of entire haplotypes rather than individual markers. This likely reflects the mechanism by which ADO occurs. Mostly likely ADO results from incomplete lysis of nuclei which leaves some regions of chromosomes tightly bound in chromatin and inaccessible to primers. As the chromatin would be bound over a contiguous genomic region, we therefore get dropout of all markers that fall within the region of undigested chromatin.  This phenomenon unfortunately looks almost exactly like what we would expect to see from a genuine somatic LOH event, however there are some important differences that I attempted to leverage to discriminate between linked ADO and LOH. 
+
+One critical difference between linked ADO and LOH is that linked ADO appears to occur randomly throughout the genome such that each nuclei should have a unique set of linked ADO products. In contrast, a biological LOH event should have identical breakpoints (Figure~\ref{LOH_ADO_Breakpoints}). 
+%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=4in]{LOH_ADO_Breakpoints}
+\end{center}
+\caption[Differences Between Linked ADO and LOH]{\textbf{Differences Between Linked ADO and LOH.} \\ Schematic illustrating differences between linked ADO and LOH by observing their effects on informative heterozygous variants on two alleles (green and blue squares). Linked ADO occurs randomly and affects both alleles equally as shown by dropped alleles (outlined squares). In contrast, LOH (caused by a deletion in this example) has identical breakpoints in all cells and is only present on a single allele. }
+\label{LOH_ADO_Breakpoints}
+\end{figure}
+%%%%%%%%%%%%%%
+The breakpoints generated by linked ADO and LOH can be determined in individual nuclei by identifying runs of homozygosity which can then be used to identify cells with identical breakpoints (My programs for this are available at \url{https://github.com/dasnellings/weaver}). In addition to differences in the breakpoints, linked ADO is expected to affect both alleles symmetrically, whereas LOH is asymmetric affecting only one allele.
+
+In addition to leveraging the differences between linked ADO and LOH I have used one additional strategy to detect LOH events. Linked ADO occurs at a rate of 5--10\% and LOH events are expected to occur as a similar or lower frequency, however pathogenic LOH events are expected to result in biallelic LOF. In a sample where one somatic mutation is already known, we expect that the LOH event should be present in the same population of cells. Therefore, by excluding any cells that do not contain the known somatic mutation, we can effectively enrich for cells likely to have an LOH event and thereby increase the allele frequency of the LOH event above the ADO signal in this restricted population (Figure~\ref{LOH_Mutation_Strategy}). 
+%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=5.8in]{LOH_Mutation_Strategy}
+\end{center}
+\caption[Leveraging Known Somatic Mutation for LOH Detection]{\textbf{Leveraging Known Somatic Mutation for LOH Detection.} \\  A known somatic mutation allows for enrichment of cells likely to have an LOH event. When considering the total population, the high rate of ADO confounds the detection of LOH events that occur at a similar frequency. However, when cells without a known somatic mutation are excluded, the LOH event may be enriched, increasing the allele frequency above the level of ADO noise.  }
+\label{LOH_Mutation_Strategy}
+\end{figure}
+%%%%%%%%%%%%%%
+The major limitation of this method is that it is only possible with samples that have at least 1 known somatic mutation, making it unusable for HHT and restricted to a subset of CCMs. 
+
+I have used this panel design and analysis method on 15 CCMs, 10 of which had at least 1 somatic mutation that could be used to restrict the population. From these experiments, I have not identified any somatic LOH events that are likely to be pathogenic; however, in one sample I have identified a putative somatic LOH event on chromosome 12 that does not overlap \italicize{KRIT1}, \italicize{CCM2}, or \italicize{PDCD10} (Figure~\ref{Putative_LOH}). 
+%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=5.8in]{Putative_LOH}
+\end{center}
+\caption[Putative Somatic LOH Event in a CCM]{\textbf{Putative Somatic LOH Event in a CCM.} \\ Runs of homozygosity present in CCM 5056 derived from snDNA-seq data from 2500 nuclei. \textbf{A}, 6 different runs spanning a 21Mb region. All 6 runs are likely generated from the same LOH event, however ADO on the edges of the event are likely generating false breakpoints. Note that there were no run of homozygosity for the reciprocal allele that consisted of at least 5 contiguous variants (the threshold for this analysis). \textbf{B}, An example of linked ADO from the same sample and chromosome showing symmetric dropout of both haplotypes at similar frequencies.}
+\label{Putative_LOH}
+\end{figure}
+%%%%%%%%%%%%%%
+This event is most likely an incidental finding, however this event should be confirmed by a secondary method as a validation of the methodology.
+
+It is a near certainty that somatic LOH events may drive the formation of CCMs and telangiectasia in HHT, however their detection has thus far been elusive. It is currently unclear if this is due to the rarity of such events or if there remain flaws in my methodology that preclude their detection.
+
+
 
 
 
@@ -79,7 +181,7 @@ The majority of \italicize{KLF4} mutations found in the catalog of somatic mutat
 %%%%%%%%%%%%%%%
 \begin{figure}[tbp!]
 \begin{center}
-\includegraphics[width=5in]{KLF4_COSMIC}
+\includegraphics[width=5.8in]{KLF4_COSMIC}
 \end{center}
 \caption[\italicize{KLF4} Mutations in COSMIC]{\textbf{\italicize{KLF4} Mutations in COSMIC. } \\ \textbf{A}, Distribution of somatic mutations in \italicize{KLF4} that are present in the catalog of somatic mutations in cancer (COSMIC). The location of the most frequent mutation (p.K409Q) is expanded in the inset. \textbf{B}, Distribution of \italicize{KLF4} p.K409Q in tissue types present in COSMIC. C. Structure of KLF4 zinc-finger domains bound to DNA (PDB: 2WBU). Border box denotes the expanded region to the right showing the interaction between K409 and the DNA backbone.}
 \label{KLF4_COSMIC}
