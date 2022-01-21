@@ -18,6 +18,10 @@ In the following sections I will discuss several open lines of inquiry, potentia
 
 
 
+
+
+
+
 \section{Missing Mutations}
 One important open question across my studies is the mutation status of lesions where I did not identify somatic mutations. In Chapter 2, I did not find a somatic mutation in 10 of 19 telangiectasia. In Chapters 3 and 4, I did not find causal somatic mutations (CCM genes or \italicize{MAP3K3}) in 25 of 51 sporadic CCMs and 10 of 20 familial CCMs. It is possible that these lesions have mutations in other genes that we did not sequence; however, I believe it is more likely that these lesions harbor mutations that cannot be detected by my sequencing method. Throughout these studies I used targeted short-read sequencing for mutation discovery. This method is extremely powerful for detecting single nucleotide variants and relatively small insertions or deletions, but is unable to detect all possible types of somatic loss of function mutations. In this section I will discuss two types of mutation that may result in loss of function, but are not detectable by traditional short-read sequencing approaches: somatic hypermethylation, and somatic loss of heterozygosity. 
 
@@ -26,7 +30,7 @@ Cytosine methylation occurs at CpG dinucleotides and results in the addition of 
 
 I attempted to detect somatic hypermethylation events in mutation-negative telangiectasia using targeted bisulfite sequencing. Bisulfite treatment of DNA converts any unmethylated cytosines to uracil via deamination such that any cytosines in the sequencing reads can be identified as methylated (Figure~\ref{Somatic_Hypermethylation}). 
 %%%%%%%%%%%%%%%
-\begin{figure}[tbp!]
+\begin{figure}[bp!]
 \begin{center}
 \includegraphics[width=5.8in]{Somatic_Hypermethylation}
 \end{center}
@@ -74,7 +78,7 @@ The second major limitation in these experiments is the heterogeneous tissue. It
 \subsection{Somatic Loss of Heterozygosity}
 The second type of event I will discuss is somatic loss of heterozygosity (LOH) events. LOH is a general term that refers to loss of an allele resulting in a previously heterozygous site becoming homozygous. For example, loss of the wild type \italicize{ENG} allele in an individual with a germline \italicize{ENG} mutation would result in biallelic LOF and could theoretically be a source of the missing mutations. LOH can result from a variety of different genomic events such as a large deletion or mitotic recombination. Like somatic hypermethylation, LOH is a common mechanism in cancers to disrupt tumor suppressor genes. While targeted short-read sequencing is great for detecting small variants, it is blind to these chromosome-scale events which occur in a small number of somatic cells---i.e. we miss the forest for the trees. 
 
-LOH in cancer samples is often detected via a SNP array such that an LOH event of reasonable frequency (often $\geq$25\%) can be visualized as a shift in copy number for a subset of markers---e.g. heterozygous markers in an unaffected region of the chromosome are present at 1~:~1 ratio, whereas markers over an LOH event at 25\% AF are present at a 1.25~:~0.75 ratio. This method works well for events with high allele frequencies, however the somatic variants I find in CCM and HHT are far lower, with most $<$5\%. This makes detection by SNP array challenging as we must identify a ratio of 1.05~:~0.95 in a fairly noisy assay. Reaching statistical significance with such a minor shift would require a very dense SNP array and a very large LOH event making this methodology infeasible. 
+LOH in cancer samples is often detected via a SNP array such that an LOH event of reasonable frequency (often $\geq$25\%) can be visualized as a shift in copy number for a subset of markers---e.g. heterozygous markers in an unaffected region of the chromosome are present at 1~:~1 ratio, whereas markers over an LOH event at 25\% AF are present at a 1.25~:~0.75 ratio. This method works well for events with high allele frequencies, however the somatic variants I find in CCM and HHT are far lower, with most $<$5\%. This makes detection by SNP array challenging as we must identify a ratio of 1.05~:~0.95 in a fairly noisy assay. Reaching statistical significance with such a minor shift would require a dense SNP array and a large LOH event making this methodology infeasible. 
 
 While detecting these events is nigh impossible with bulk sequencing, it is theoretically trivial with single-nucleus DNA sequencing (snDNA-seq). As an initial experiment, I performed snDNA-seq on familial CCM samples for which I did not find a somatic mutation. To detect somatic LOH in these samples, I needed only to sequence the pathogenic germline mutation and determine whether that heterozygous mutation was homozygous in some of the cells (Figure~\ref{Single_Cell_LOH}).
 %%%%%%%%%%%%%%%
@@ -86,7 +90,7 @@ While detecting these events is nigh impossible with bulk sequencing, it is theo
 \label{Single_Cell_LOH}
 \end{figure}
 %%%%%%%%%%%%%%
-The problem with this approach, as discussed in Chapter 3, is that snDNA-seq is confounded by stochastic allelic dropout (ADO) at a rate of 5--10\% per allele. As a result, if 1000 nuclei are sequenced, we find that around 800 with have the expected heterozygous genotype, 100 will be homozygous for the reference allele, and 100 will be homozygous for the alternate allele. As ADO often occurs at similar or higher frequencies than the expected somatic LOH events, this targeted method is infeasible. 
+The problem with this approach, as discussed in Chapter 3, is that snDNA-seq is confounded by stochastic allelic dropout (ADO) at a rate of 5--10\% per allele. As a result, if 1000 nuclei are sequenced, we find that around 800 have the expected heterozygous genotype, 100 will be homozygous for the reference allele, and 100 will be homozygous for the alternate allele. As ADO often occurs at similar or higher frequencies than the expected somatic LOH events, this targeted method is infeasible. 
 
 In an attempt to overcome ADO I designed a panel for snDNA-seq that targets common SNPs such that we capture a high density of SNPs in the region of the genes of interest, with progressively lower density of markers towards the distal ends of the chromosome. This pattern was selected because there is a limit to how many markers we can use on a single panel (about 400 amplicons) and this pattern maximizes our chance of finding informative heterozygous SNPs in the region of the gene, while still maintaining some sensitivity for larger events that may impact a large portion of the chromosome. Any LOH event should convert multiple contiguous heterozygous markers to homozygosity and would theoretically be robust against random ADO of individual amplicons. Using this method, I again found that ADO was a major confounder. I initially expected that ADO would be largely stochastic such that each marker would be independent of the state of other markers. However, I found that ADO events were in fact `linked', such that a set of markers that was physically close on one allele would drop out as a set (Figure~\ref{Linked_ADO}). 
 %%%%%%%%%%%%%%%
@@ -142,29 +146,75 @@ It is a near certainty that somatic LOH events may drive the formation of CCMs a
 
 
 
-\section{Sporadic AVMs and HHT}
+
+
+\section{Connection Between Sporadic Brain AVMs and HHT}
+Brain AVMs are common in individuals with HHT, however the majority of brain AVMs in the population occur sporadically in individuals with no known genetic predisposition. This paradigm of similar pathologies in sporadic lesions and lesions from a familial genetic disorder is very similar to CCM. CCMs also have a familial and sporadic form and research from myself and others has shown that both forms share many aspects of pathogenesis and are ultimately caused by identical mutations. I hypothesized that this was also the case for sporadic and HHT-associated brain AVMs.
+
+In Chapter 2 I showed that HHT-associated telangiectasia are caused by a two-hit mechanism. This study focused on telangiectasia as HHT-associated visceral AVMs are difficult to study since they are rarely resected in favor of embolization and radiosurgery. Unlike brain AVMs in HHT, sporadic brain AVMs are commonly resected and are readily available to researchers. Previous studies found that many sporadic brain AVMs have a somatic mutation in \italicize{KRAS} \citep{nikolaev2018}, however it remains unclear if these samples may have additional mutations. To test whether sporadic brain AVMs harbor somatic mutations in \italicize{ENG}, \italicize{ACVRL1}, or \italicize{SMAD4}, I sequenced 68 presumed sporadic brain AVMs that were surgically resected at the Barrow Neurological Institute. 
+
+As reported by others I found that 24 of the 68 had a gain of function mutation in \italicize{KRAS}. I also identified one sample with a gain of function mutation in \italicize{TEK} (p.L194F) which is known to cause venous malformations \citep{limaye2009}. This sample may represent a novel mutation for AVMs, but more likely is the result of a misclassification of a venous malformation as an AVM. One additional sample has a mutation in \italicize{VHL} (p.N78S) which has been shown to be moderately activating in some assays \citep{rechsteiner2011}, however it remains unclear if this is a causal mutation for AVMs. In one sample I found a germline missense mutation in \italicize{ENG} (p.R406C, 550/1178 reads, 47\% VAF) which has not been previously reported to cause HHT, however given the context, it is highly likely to be pathogenic. I reviewed the case notes from the Barrow Neurological Institute for this individual and there was no information that could either support or reject an HHT diagnosis (telangiectasia, family history, epistaxis). Notably, this sample did not have a GOF mutation \italicize{KRAS} and I did not identify any somatic mutations in \italicize{ENG}. 
+
+In 3 of the 68 brain AVM samples I found a mutation in \italicize{ASXL1} (p.S1344F, p.W591*, p.Q512*), the latter found in a sample with a GOF \italicize{KRAS} mutation. These mutations are all likely to cause LOF. LOF mutations in \italicize{ASXL1} have never been reported in a vascular malformation, however they are commonly found in cases of clonal hematopoiesis---a phenomenon where hematopoietic stem cells responsible for forming blood cells acquire mutations that give them a survival advantage and become the dominant clone in the blood as an individual ages \citep{fujino2020}. This finding was initially very exciting as the mutation was found in multiple brain AVM samples; however, upon reevaluation it is most likely that these individuals had some degree of clonal hematopoiesis and we picked up the \italicize{ASXL1} mutation from residual blood present in the AVM sample. I encountered a similar issue in an HHT-associated pulmonary AVM where I identified a well-studied GOF mutation in \italicize{DNMT3A} (p.R882H, 57/1029 reads, 5.5\% VAF). Similar to \italicize{ASXL1}, mutations in \italicize{DNMT3A} have not been reported in vascular malformations, but they are common in cases of clonal hematopoiesis \citep{buscarlet2017}. This finding suggests mutations in blood cells could be a major confounder when searching for mutation in vascular malformations, and highlights the importance of paired blood sequencing.
+
+These initial data suggest that while HHT-associated brain AVMs and sporadic brain AVMs have similar pathologies, they are genetically distinct. However, additional studies---especially of HHT-associated AVMs---will be required to fully understand their genetic underpinnings. 
+
+
+
+
 
 
 
 \section{Syndromic Brain AVMs in the Amish}
+In 1997, members of the Marchuk lab collected blood samples from a large 12-generation kindred of the Amish of Lancaster Pennsylvania who develop syndromic brain AVMs. This kindred includes 6 individuals (2 female, 4 male, none are first-degree relatives) with a confirmed AVM in the brain or spinal cord; however, only 5 were available for sample collection. As the Amish are a small insular community, it is possible that this AVM syndrome is caused by a rare ancestral mutation that has reached autozygosity in the affected individuals. As the Amish of Lancaster keep meticulous genealogical records, previous members of the lab were able to determine that the 6 affected individuals were born from pairings with kinship coefficients between 0.009 and 0.032. The inheritance pattern strongly suggests autosomal recessive inheritance; however, as with other genetic VM disorders it is likely that there is reduced penetrance. During sample collection, individuals filled out a survey with symptoms and several of the `unaffected' individuals reported seizures and frequent headaches which are common symptoms of brain AVMs. As the Amish eschew health insurance, the only MRI available for these individuals are of low quality and were ultimately inconclusive. 
 
+Several previous members of the Marchuk lab have attempted to find the causal mutations in this kindred and there have been several mapping studies performed using SNP arrays. These mapping efforts revealed several putative regions of autozygosity on chromosomes 9 and 15 that were promising candidates, though a causal mutation was not found. To follow up on these previous efforts, I performed whole-exome sequencing on 4 of the affected individuals and whole-genome sequencing on 1 affected individual to validate the previously mapped regions of autozygosity and to identify a pathogenic variant. Due to the reduced penetrance, I only sequenced affected individuals as it was not possible to determine who is not affected. From these analyses, I determined 9 regions of autozygosity shared between all 5 individuals across chromosomes 2, 3, 11, 14, 19, and 20 (Figure~\ref{Amish_Autozygosity}).
+%%%%%%%%%%%%%%%
+\begin{figure}[tbp!]
+\begin{center}
+\includegraphics[width=5.9in]{Amish_Autozygosity}
+\end{center}
+\caption[Autozygosity in Amish with Syndromic Brain AVMs]{\textbf{Autozygosity in Amish with Syndromic Brain AVMs.} \\ Regions of presumed autozygosity (blue bars) in the autosomes and ChrX in 5 individuals with syndromic brain AVMs. The red * shows regions of autozygosity that are present in all 5 individuals. Note that the data from sample 2585 is derived from whole-genome sequencing data and therefore has finer resolution than the other samples which are derived from whole-exome sequencing data. Samples 2597, 2585, 2575 and 2557 are from males and are presumed to be hemizygous across ChrX. Sites on ChrX that were determined to be heterozygous in these samples are likely the result of either sequencing errors or misalignments.}
+\label{Amish_Autozygosity}
+\end{figure}
+%%%%%%%%%%%%%%
+ Notably, none of the previously identified regions were validated. I manually examined the previously determined regions on chromosomes 9 and 15 and found that, while the markers used in the initial study were accurate, I found heterozygous variants in between markers that disrupted the putative regions of autozygosity. 
 
+I did not identify any putative pathogenic variants within the regions of autozygosity that I identified. I also identified regions that were autozygous in only 4 of the 5 individuals and again failed to find any putative pathogenic variants in these regions. I broadened my search to no longer be restricted by regions of autozygosity, and again failed to find any likely pathogenic homozygous variants in these individuals. I also manually examined variants in the previously identified regions on chromosomes 9 and 15 and failed to find any likely pathogenic homozygous variants. To explore the possibility that there were two different variants in the same gene, I expanded my search to heterozygous variants, present at $<$1\% population allele frequency in gnomAD, and filtered for nonsynonymous variants. I did not find any recurrently mutated genes shared between these individuals. Note that I did not find any mutations in \italicize{ENG}, \italicize{ACVRL1}, \italicize{SMAD4}.
 
+The variants I identified to this point have been single nucleotide variants, small insertions, or small deletions. These variants are readily detectable with traditional variant callers, however these variant callers are not able to detect structural variation. Calling structural variants from exome sequencing data is challenging due to sparse coverage, however I was able to identify structural variants in sample 2585 for which I performed whole-genome sequencing. This analysis was performed with Manta using whole-genome sequencing data from blood outgrowth endothelial cells from an individual with HHT as a negative control \citep{chen2016}. From this analysis I identified 601 putative structural variants that were homozygous in sample 2585 and absent in the negative control. Resources for programmatic adjudication of structural variants are sparse, specifically aggregate population allele frequency data, so I manually analyzed each putative variant while discarding any putative variant that was present in the NCBI Curated Common Structural Variants study (NCBI study accession no: nstd186) or the Database of Genomic Variants \citep{macdonald2014}. The majority of putative variants were either of poor quality or were present in the aforementioned databases; even so, there remain many high quality, undocumented variants. Several of the remaining variants fall in regions that overlap known ENCODE elements, the boundaries of topologically associated domains, and non-coding RNAs, however the impact of these variants remains unclear. Future studies should focus on performing whole-genome sequencing of additional samples to narrow the list of putative variants, and perform functional validation of any promising variants. 
 
-\section{Genomic Instability in Vascular Malformations}
-
-
-
-\section{Cell Non-autonomous Effects in CCMs}
-
-
-
-\section{Single-Nucleus Phased Droplet Genotyping}
-% SNuPDoG???
 
 
 \section{Mosaicism in CCM}
 % BaseScope
+
+
+
+\section{Sturge-Weber Syndrome and Somatic Mutations in \italicize{GNAQ}}
+%\subsection{Happle's hypothesis}
+%\subsection{\italicize{GNAQ} in uveal melanoma and circumscribed choroidal hemangioma}
+%\subsection{Link between SWS, UM, and CCH?}
+
+
+
+
+
+
+
+
+\section{Somatic Mutations in Infantile Hemangioma}
+Infantile hemangioma (IH) are one of the most common vascular malformations. They occur in children and are typically present at birth as a red spot flush with the surrounding skin. Soon after birth the hemangioma rapidly grows and becomes raised from the skin. They are generally benign and are typically left alone unless they cover the child's mouth, nose, or eyes. What makes IH so interesting compared to other types of vascular malformations is that they almost always completely regress within the first few years of the child's life. While other types of vascular malformations may spontaneously regress (telangiectasia and AVMs), none do so with the consistency of IH. This phenomenon has been of great interest, not for the purpose of developing therapeutics for IH (propranolol is an extremely effective treatment for IH) but for uncovering the mechanism of regression in the hopes that what we learn can be applied to regress other, more nefarious, vascular malformations. 
+
+\subsection{GLUT1 in IH endothelium}
+Perhaps one of the most provocative discoveries into the mechanism of IH pathogenesis is the fact that endothelial cells from IHs highly express GLUT1 \citep{north2000, north2001}. GLUT1 is a glucose transporter that has remarkable specificity for the placental endothelium. This finding suggested that the IH may be comprised of cells that dislodged from the maternal placenta, then became hyper-proliferative in a post-fetal environment. If this hypothesis is correct, one would expect to find that the IH is a genetically chimeric growth between fetal and maternal cells. This hypothesis was put to the test using fluorescence \italicize{in situ} hybridization to assay the presence of XX cells in IH from a male infant with confirmation by sequencing microsatellites and SNPs that were divergent between mother and child. This analysis found no evidence for maternal-fetal chimerism in IH \citep{pittman2006}. Despite this counter-evidence, the presence of GLUT1 in IH is strongly indicative of some link with the placenta though unfortunately this link currently remains elusive. The current literature has very clearly shown the presence of GLUT1 in IH endothelial cells, however the extent of the placental transcriptional program is unclear. Epigenomic profiling of paired IH and maternal placental samples may give valuable insights into the mechanism of IH. 
+
+\subsection{Efforts to find somatic mutations in IH}
+As it is quickly becoming clear that the vast majority of vascular malformations are the result of somatic mutations---many occurring in known oncogenes---I thought that somatic mutations may also underlie IH. To test this, I sequenced 61 IH lesions on an 'oncopanel' covering many genes that are highly mutated in cancers as well as several genes previously implicated in vascular malformations (\italicize{KRIT1, CCM2, PDCD10, ACVRL1, ENG, SMAD4,} etc.) Unfortunately after filtering putative variants, no there were no variants with likely functional significance and that occurred in more than a single sample. I am aware of at least 1 other group that has attempted to identify somatic mutations in IH via whole-exome sequencing, however to date there are no known somatic mutations in IH. One important aspect of these studies that must be noted is that they are invariably focused on coding regions of the genome. Non-coding variants are more than capable of causing disease however discovery-focused sequencing studies often ignore non-coding regions both because of the cost of sequencing the entire genome to a depth sufficient to detect somatic mutations, and the challenges associated with functional analysis of non-coding variants. Further studies may find that somatic mutations do cause IH, but they occur in a region of the genome that is missed by the majority of sequencing studies. 
+
+
+
+
 
 
 
@@ -192,36 +242,16 @@ I though that since overexpression of \italicize{KLF4} is sufficient to cause CC
 
 
 
+%\section{Genomic Instability in Vascular Malformations}
 
 
 
+%\section{Cell Non-autonomous Effects in CCMs}
 
 
 
-
-\section{Sturge-Weber Syndrome and Somatic Mutations in \italicize{GNAQ}}
-\subsection{Happle's hypothesis}
-\subsection{\italicize{GNAQ} in uveal melanoma and circumscribed choroidal hemangioma}
-\subsection{Link between SWS, UM, and CCH?}
-
-
-
-
-
-
-
-\section{Somatic Mutations in Infantile Hemangioma}
-Infantile hemangioma (IH) are one of the most common vascular malformations. They occur in children and are typically present at birth as a red spot flush with the surrounding skin. Soon after birth the hemangioma rapidly grows and becomes raised from the skin. They are generally benign and are typically left alone unless they cover the child's mouth, nose, or eyes. What makes IH so interesting compared to other types of vascular malformations is that they almost always completely regress within the first few years of the child's life. While other types of vascular malformations may spontaneously regress (telangiectasia and AVMs), none do so with the consistency of IH. This phenomenon has been of great interest, not for the purpose of developing therapeutics for IH (propranolol is an extremely effective treatment for IH) but for uncovering the mechanism of regression in the hopes that what we learn can be applied to regress other, more nefarious, vascular malformations. 
-
-\subsection{GLUT1 in IH endothelium}
-Perhaps one of the most provocative discoveries into the mechanism of IH pathogenesis is the fact that endothelial cells from IHs highly express GLUT1 \citep{north2000, north2001}. GLUT1 is a glucose transporter that has remarkable specificity for the placental endothelium. This finding suggested that the IH may be comprised of cells that dislodged from the maternal placenta, then became hyper-proliferative in a post-fetal environment. If this hypothesis is correct, one would expect to find that the IH is a genetically chimeric growth between fetal and maternal cells. This hypothesis was put to the test using fluorescence \italicize{in situ} hybridization to assay the presence of XX cells in IH from a male infant with confirmation by sequencing microsatellites and SNPs that were divergent between mother and child. This analysis found no evidence for maternal-fetal chimerism in IH \citep{pittman2006}. Despite this counter-evidence, the presence of GLUT1 in IH is strongly indicative of some link with the placenta though unfortunately this link currently remains elusive. The current literature has very clearly shown the presence of GLUT1 in IH endothelial cells, however the extent of the placental transcriptional program is unclear. Epigenomic profiling of paired IH and maternal placental samples may give valuable insights into the mechanism of IH. 
-
-\subsection{Efforts to find somatic mutations in IH}
-As it is quickly becoming clear that the vast majority of vascular malformations are the result of somatic mutations—many occurring in known oncogenes—I thought that somatic mutations may also underlie IH. To test this, I sequenced 61 IH lesions on an 'oncopanel' covering many genes that are highly mutated in cancers as well as several genes previously implicated in vascular malformations (\italicize{KRIT1, CCM2, PDCD10, ACVRL1, ENG, SMAD4,} etc.) Unfortunately after filtering putative variants, no there were no variants with likely functional significance and that occurred in more than a single sample. I am aware of at least 1 other group that has attempted to identify somatic mutations in IH via whole-exome sequencing, however to date there are no known somatic mutations in IH. One important aspect of these studies that must be noted is that they are invariably focused on coding regions of the genome. Non-coding variants are more than capable of causing disease however discovery-focused sequencing studies often ignore non-coding regions both because of the cost of sequencing the entire genome to a depth sufficient to detect somatic mutations, and the challenges associated with functional analysis of non-coding variants. Further studies may find that somatic mutations do cause IH, but they occur in a region of the genome that is missed by the majority of sequencing studies. 
-
-
-
-
+%\section{Single-Nucleus Phased Droplet Genotyping}
+% SNuPDoG???
 
 
 
