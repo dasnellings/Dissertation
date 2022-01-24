@@ -75,6 +75,7 @@ ENTRY
     url
     volume
     year
+    pmid
   }
   {}
   { label extra.label sort.label short.list }
@@ -121,6 +122,11 @@ FUNCTION {output.check}
 }
 FUNCTION {fin.entry}
 { add.period$
+  write$
+  newline$
+}
+FUNCTION {fin.entry.no.period}
+{ 
   write$
   newline$
 }
@@ -183,6 +189,12 @@ FUNCTION {emphasize}
 { duplicate$ empty$
     { pop$ "" }
     { "{\em " swap$ * "\/}" * }
+  if$
+}
+FUNCTION {emphasize.noitalic}
+{ duplicate$ empty$
+    { pop$ "" }
+    { "{" swap$ * "\/}" * }
   if$
 }
 FUNCTION {tie.or.space.prefix}
@@ -352,10 +364,30 @@ FUNCTION {bibinfo.warn}
     }
   if$
 }
+
+FUNCTION {pmidlink}
+{ duplicate$ empty$
+{ pop$ "" }
+{ pmid empty$
+    { skip$ }
+    { "\newline\pmidprefix\href{https://www.ncbi.nlm.nih.gov/pubmed/" pmid * "}{" * swap$ * "}" * }
+  if$
+}
+if$
+}
+
+FUNCTION {format.pmid}
+{ pmid
+  duplicate$ empty$ 'skip$
+    {}
+  if$
+  "pmid" bibinfo.check
+}
+
 FUNCTION {write.url}
 { url empty$
     { skip$ }
-    { "\newline\urlprefix\url{" url * "}" * write$ newline$ }
+    { "\newline\urlprefix{ " url * "}" * write$ newline$ }
   if$
 }
 
@@ -921,7 +953,8 @@ FUNCTION {article}
   if$
   new.block
   format.note output
-  fin.entry
+  format.pmid emphasize.noitalic pmidlink "pmid" output.check
+  fin.entry.no.period
   write.url
 }
 FUNCTION {book}
@@ -1467,6 +1500,8 @@ FUNCTION {begin.bib}
   "  \def\url#1{{\tt #1}}\fi"
   write$ newline$
   "\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi"
+  write$ newline$
+    "\expandafter\ifx\csname pmidprefix\endcsname\relax\def\pmidprefix{PMID }\fi"
   write$ newline$
 }
 EXECUTE {begin.bib}

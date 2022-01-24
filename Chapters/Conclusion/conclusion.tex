@@ -190,22 +190,33 @@ The variants I identified to this point have been single nucleotide variants, sm
 
 
 
-\section{Mosaicism in CCM}
-% BaseScope
-
-
-
 \section{Sturge-Weber Syndrome and Somatic Mutations in \italicize{GNAQ}}
 Surge-Weber syndrome (SWS) is a sporadic vascular disease characterized by a mosaic capillary malformation (aka port-wine stain) present at birth and a leptomeningeal angioma in the brain. Unlike CCM and HHT, SWS is an exclusively sporadic disease, with no heritable component. A genetic study of SWS found that the capillary malformation and the leptomeningeal angioma are caused by a somatic GOF mutation in \italicize{GNAQ} \citep{shirley2013}. Notably, this study also found that facial capillary malformations not associated with SWS are caused by the same mutation. The observation that SWS is due to a genetic mutation, yet is not heritable, suggests that GOF in \italicize{GNAQ} would not be viable when transmitted through the germline, and therefore SWS can only exist when the mutation occurs during postzygotic development---as was predicted by Rudolf Happle \citep{happle1987}.
 
-The genetics of \italicize{GNAQ} has captured my interest as it turns out that activating mutations are not only found in SWS, but also in uveal melanoma (a bona fide cancer) \citep{shoushtari2014}, and circumscribed choroidal hemangioma \citep{leguin2019}. I found it curious that activation of the same gene could lead to these disparate phenotypes. More interesting yet, these diseases all have highly specific and distinct \italicize{GNAQ} mutational spectra: SWS is dominated by p.R183Q (although we recently found 1 case of a non-SWS capillary malformation with p.Q209R), circumscribed choroidal hemangioma is highly specific for p.Q209R, whereas the vast majority of uveal melanomas have p.Q209L or p.Q209P with a minority having p.R183Q or p.Q209R. Based on this rigid genotype-phenotype correlation I hypothesized that---while all of these mutations activate \italicize{GNAQ}---they promote distinct modes of activation that result in different phenotypes. 
+The genetics of \italicize{GNAQ} has captured my interest as it turns out that activating mutations are not only found in SWS, but also in circumscribed choroidal hemangioma \citep{leguin2019}, and uveal melanoma (a bona fide cancer) \citep{shoushtari2014}. I found it curious that activation of the same gene could lead to these disparate phenotypes. More interesting yet, these diseases all have highly specific and distinct \italicize{GNAQ} mutational spectra: SWS is dominated by p.R183Q (although we recently found 1 case of a non-SWS capillary malformation with p.Q209R (Figure~\ref{GNAQ_Structure}A)), 
+%%%%%%%%%%%%%%%
+\begin{figure}[bp!]
+\begin{center}
+\includegraphics[width=4in]{GNAQ_Structure}
+\end{center}
+\caption[Structural Evaluation of Activating \italicize{GNAQ} Mutations]{\textbf{Structural Evaluation of Activating \italicize{GNAQ} Mutations.} \\ \textbf{A}, DNA sequencing reads from capillary malformation sample 3225 containing the p.Q209R mutation. \textbf{B}, Crystal structure of GNAQ (PDB: 3OHM). The catalytic site is by the dashed box. \textbf{C-F}, Zoom of the catalytic site with WT GNAQ or computational predictions of p.R183Q, p.Q209L, and p.Q209R. The yellow dashed lines with asterisks show predicted polar interactions with GTP. GNAQ was crystalized with GDP and a tetrafluoroaluminate ion (AlF$_4$) in place of GTP. For the purposes of this analysis GDP + AlF$_4$ was computationally mutated to GTP to determine polar interactions with GNAQ. }
+\label{GNAQ_Structure}
+\end{figure}
+%%%%%%%%%%%%%%
+circumscribed choroidal hemangioma is highly specific for p.Q209R, whereas the vast majority of uveal melanomas have p.Q209L or p.Q209P with a minority having p.R183Q or p.Q209R. Based on this rigid genotype-phenotype correlation I hypothesized that---while all of these mutations activate \italicize{GNAQ}---they promote distinct modes of activation that result in different phenotypes. 
 
-To test this hypothesis, Francesca Galeffi and I transfected human microvascular endothelial cells in culture with a plasmid containing 1 of 5 variants of \italicize{GNAQ}: wild type, p.C9X, p.R183Q, p.Q209R, or p.Q209L. We performed RNA-seq on these cultures in triplicate to determine if the different mutation in \italicize{GNAQ} were activating distinct transcriptional programs in endothelial cells. 
+%%%%%%%%%%%%%%%
+\begin{figure}[bp!]
+\begin{center}
+\includegraphics[width=5.7in]{GNAQ_RNAseq}
+\end{center}
+\caption[Transcriptional Effects of Activating \italicize{GNAQ} Mutations]{\textbf{Transcriptional Effects of Activating \italicize{GNAQ} Mutations.} \\ \textbf{A}, Principal component analysis of RNA-seq data produced from human microvascular endothelial cells transfected with WT or mutant \italicize{GNAQ} plasmids. \textbf{B-C}, Top enriched terms for gene ontology (B) and KEGG signaling pathway (C) using the top 100 differentially expressed genes between WT and p.Q209R groups. Enriched terms are sorted by fold enrichment and all terms shown have \italicize{P} $< 1 \times 10^{-5}$. \textbf{D}, MA plots of RNA-seq data for pairwise comparisons between WT and mutant \italicize{GNAQ} (top) and comparisons between mutations (bottom). Blue circles are statistically significant differentially expressed genes, blue triangles are significant differentially expressed genes off the scale, grey circles are not significant.}
+\label{GNAQ_RNAseq}
+\end{figure}
+%%%%%%%%%%%%%%
+To test this hypothesis, Francesca Galeffi and I transfected human microvascular endothelial cells in culture with a plasmid containing 1 of 5 variants of \italicize{GNAQ}: wild type, p.C9X, p.R183Q, p.Q209R, or p.Q209L. We performed RNA-seq on these cultures in triplicate to determine if the different mutations in \italicize{GNAQ} were activating distinct transcriptional programs in endothelial cells. We found that each of the activated \italicize{GNAQ} plasmids produced extensive transcriptional changes relative to the non-activated \italicize{GNAQ} plasmids (WT and p.C9X); however, there were few differentially expressed genes between any pairwise comparison of activated \italicize{GNAQ} plasmids (Figure~\ref{GNAQ_RNAseq}).
 
-%\subsection{Happle's hypothesis}
-%\subsection{\italicize{GNAQ} in uveal melanoma and circumscribed choroidal hemangioma}
-%\subsection{Link between SWS, UM, and CCH?}
-
+This finding suggests that the different activating mutations in \italicize{GNAQ} produce very similar effects. Though each mutation has a similar transcriptional consequences, Francesca Galeffi has performed luciferase assays in cultured cells and determined that the strength of these mutations vary: p.R183Q is weakly activating, p.Q209R is moderately activating, and p.Q209L is highly activating. Notably, this finding is consistent with the predicted number of polar contacts with GTP in the catalytic site of GNAQ upon each mutation (Figure~\ref{GNAQ_Structure}C-F). Why different activating mutations in \italicize{GNAQ} are highly specific in SWS, circumscribed choroidal hemangioma, and uveal melanoma remains an open question; however, each phenotype is likely defined by a combination of factors including the strength of the mutation, the timing of the mutation, and the cell type that acquires the mutation.
 
 
 
